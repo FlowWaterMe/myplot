@@ -14,8 +14,8 @@
 #include "AppParam.h"
 #include "CurvePlot.h"
 #include "QCCurvePlot.h"
-static const QString ICON_SLIDESWITCH_OFF = "E:\\Young\project\\QtGuiApplication3 - 副本\\QtGuiApplication3\\image\\switch_off.png";
-static const QString ICON_SLIDESWITCH_ON = "E:\\Young\project\\QtGuiApplication3 - 副本\\QtGuiApplication3\\image\\switch_on.png";
+static const QString ICON_SLIDESWITCH_OFF = "E:\\Young\\project\\QtGuiApplication3 - 副本\\QtGuiApplication3\\image\\switch_off.png";
+static const QString ICON_SLIDESWITCH_ON = "E:\\Young\\project\\QtGuiApplication3 - 副本\\QtGuiApplication3\\image\\switch_on.png";
 QtGuiApplication3::QtGuiApplication3(QWidget *parent)
 	: QMainWindow(parent)
 	,ui(new Ui::QtGuiApplication3Class)
@@ -355,5 +355,16 @@ void QtGuiApplication3::InitUITableWidget()
 
 		ui->tableWidget->setRowHeight(iRow, 50);
 	}
+	QString qsPattern = "";
+	qsPattern = "^[\u4e00-\u9fa5_\.a-zA-Z\\s]{0,20}$";
+	QRegExp regx(qsPattern);
+	QValidator *validator = new QRegExpValidator(regx, this);
+	QDoubleValidator * qinv = new QDoubleValidator;
+	ui->lineEdit->setValidator(validator);
+
+
+	ui->lineEdit_2->setValidator(qinv);
+	qinv = nullptr;
+	delete qinv;
 }
 

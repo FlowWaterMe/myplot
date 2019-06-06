@@ -103,6 +103,15 @@
     <ClCompile Include="GeneratedFiles\Release\moc_QCCurvePlot.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="VAZApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VAZApplication.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VAZApplication.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QtGuiApplication3.h">
@@ -127,6 +136,9 @@
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="QCCurvePlot.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="VAZApplication.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>

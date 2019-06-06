@@ -6,17 +6,23 @@
 #include <QDebug>
 #include <QTextCodec>
 #include "GlobalDllheader.h"
-
+#include "VAZApplication.h"
 void SetAppStyleSheet(QApplication &App);
 void SetAppCodec(QApplication &App);
 bool InitBase(QString &errStr);
+
 int main(int argc, char *argv[])
 {
-	QApplication a(argc, argv);
-	SetAppStyleSheet(a);
-	SetAppCodec(a);
-	QtGuiApplication3 w;
-	w.show();
+	//QApplication a(argc, argv);
+
+
+	CVAZApplication &App = CVAZApplication::GetInstance(argc, argv);
+	SetAppStyleSheet(App);
+	SetAppCodec(App);
+
+	QtGuiApplication3 MainWin;
+	App.setMainWindow(&MainWin);
+	MainWin.show();
 	//QtGuiClass w1;
 	//w1.show();
 	QDateTime dateTime;
@@ -60,7 +66,9 @@ int main(int argc, char *argv[])
 	}
 	QString  m_qsInitErrStr;
 	InitBase(m_qsInitErrStr);
-	return a.exec();
+
+
+	return App.exec();
 }
 bool InitBase(QString &errStr)
 {

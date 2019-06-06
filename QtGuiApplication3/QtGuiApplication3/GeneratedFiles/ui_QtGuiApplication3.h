@@ -41,8 +41,8 @@ public:
     QGridLayout *gridLayout_3;
     QGroupBox *groupBox;
     QGridLayout *gridLayout_6;
-    QLineEdit *lineEdit;
     CMySlideSwitch *label;
+    QLineEdit *lineEdit;
     QTableWidget *tableWidget;
     QGridLayout *gridLayout_5;
     QPushButton *pushButton_zhuxing;
@@ -52,6 +52,7 @@ public:
     QPushButton *pushButton_dq;
     QPushButton *pushButton_fn;
     QTextEdit *textEdit;
+    QLineEdit *lineEdit_2;
     QTabWidget *tabWidget;
     QWidget *t1;
     QGridLayout *gridLayout_2;
@@ -92,21 +93,21 @@ public:
         gridLayout_6->setSpacing(6);
         gridLayout_6->setContentsMargins(11, 11, 11, 11);
         gridLayout_6->setObjectName(QStringLiteral("gridLayout_6"));
-        lineEdit = new QLineEdit(groupBox);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
-
-        gridLayout_6->addWidget(lineEdit, 0, 0, 1, 1);
-
         label = new CMySlideSwitch(groupBox);
         label->setObjectName(QStringLiteral("label"));
         label->setMinimumSize(QSize(80, 40));
 
         gridLayout_6->addWidget(label, 0, 1, 1, 1);
 
+        lineEdit = new QLineEdit(groupBox);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+
+        gridLayout_6->addWidget(lineEdit, 0, 0, 1, 1);
+
         tableWidget = new QTableWidget(groupBox);
         tableWidget->setObjectName(QStringLiteral("tableWidget"));
 
-        gridLayout_6->addWidget(tableWidget, 1, 0, 1, 2);
+        gridLayout_6->addWidget(tableWidget, 2, 0, 1, 2);
 
         gridLayout_5 = new QGridLayout();
         gridLayout_5->setSpacing(6);
@@ -145,12 +146,17 @@ public:
         gridLayout_5->addWidget(pushButton_fn, 2, 1, 1, 1);
 
 
-        gridLayout_6->addLayout(gridLayout_5, 2, 0, 1, 2);
+        gridLayout_6->addLayout(gridLayout_5, 3, 0, 1, 2);
 
         textEdit = new QTextEdit(groupBox);
         textEdit->setObjectName(QStringLiteral("textEdit"));
 
-        gridLayout_6->addWidget(textEdit, 3, 0, 1, 2);
+        gridLayout_6->addWidget(textEdit, 4, 0, 1, 2);
+
+        lineEdit_2 = new QLineEdit(groupBox);
+        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+
+        gridLayout_6->addWidget(lineEdit_2, 1, 0, 1, 1);
 
 
         gridLayout_3->addWidget(groupBox, 0, 0, 1, 1);
@@ -251,8 +257,8 @@ public:
     {
         QtGuiApplication3Class->setWindowTitle(QApplication::translate("QtGuiApplication3Class", "QtGuiApplication3", Q_NULLPTR));
         groupBox->setTitle(QApplication::translate("QtGuiApplication3Class", "GroupBox", Q_NULLPTR));
-        lineEdit->setText(QApplication::translate("QtGuiApplication3Class", "\346\254\242\350\277\216\346\235\245\345\210\260\344\270\215\344\272\214\344\270\226\347\225\214", Q_NULLPTR));
         label->setText(QApplication::translate("QtGuiApplication3Class", "TextLabel", Q_NULLPTR));
+        lineEdit->setText(QString());
         pushButton_zhuxing->setText(QApplication::translate("QtGuiApplication3Class", "\346\237\261\345\275\242", Q_NULLPTR));
         pushButton_zhexian->setText(QApplication::translate("QtGuiApplication3Class", "\346\212\230\347\272\277", Q_NULLPTR));
         pushButton_yb->setText(QApplication::translate("QtGuiApplication3Class", "\346\240\267\346\234\254\345\233\276\345\275\242", Q_NULLPTR));
