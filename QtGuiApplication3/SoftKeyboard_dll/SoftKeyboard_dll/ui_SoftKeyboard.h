@@ -133,6 +133,7 @@ public:
         font.setItalic(false);
         font.setWeight(50);
         SoftKeyboard->setFont(font);
+        SoftKeyboard->setFocusPolicy(Qt::ClickFocus);
         SoftKeyboard->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	\n"

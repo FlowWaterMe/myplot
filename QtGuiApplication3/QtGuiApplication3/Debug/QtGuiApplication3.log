@@ -1,4 +1,8 @@
-﻿  QtGuiApplication3.cpp
+﻿  moc_QtGuiApplication3.cpp
+  moc_VAZApplication.cpp
+  QtGuiApplication3.cpp
+  VAZApplication.cpp
+  main.cpp
 QtGuiApplication3.cpp(359): warning C4129: “.”: 不可识别的字符转义序列
   QtGuiApplication3.vcxproj -> E:\Young\project\myPlot\QtGuiApplication3\Win32\Debug\QtGuiApplication3.exe
   QtGuiApplication3.vcxproj -> E:\Young\project\myPlot\QtGuiApplication3\Win32\Debug\QtGuiApplication3.pdb (Full PDB)

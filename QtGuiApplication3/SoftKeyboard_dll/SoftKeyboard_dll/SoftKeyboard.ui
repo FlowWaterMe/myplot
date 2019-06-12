@@ -25,6 +25,9 @@
     <bold>false</bold>
    </font>
   </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
   <property name="windowTitle">
    <string>Vazyme KEY</string>
   </property>

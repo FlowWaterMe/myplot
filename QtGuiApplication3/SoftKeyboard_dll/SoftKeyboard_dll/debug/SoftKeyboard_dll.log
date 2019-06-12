@@ -1,3 +1,8 @@
-﻿  SoftKeyboard_dll.cpp
+﻿  Moc'ing SoftKeyboard_dll.h...
+  Generate moc_predefs.h
+  Uic'ing SoftKeyboard.ui...
+  moc_SoftKeyboard_dll.cpp
+  SoftKeyboard_dll.cpp
+    正在创建库 E:\Young\project\myPlot\QtGuiApplication3\Win32\Debug\\SoftKeyboard_dll.lib 和对象 E:\Young\project\myPlot\QtGuiApplication3\Win32\Debug\\SoftKeyboard_dll.exp
   SoftKeyboard_dll.vcxproj -> E:\Young\project\myPlot\QtGuiApplication3\Win32\Debug\SoftKeyboard_dll.dll
   SoftKeyboard_dll.vcxproj -> E:\Young\project\myPlot\QtGuiApplication3\Win32\Debug\SoftKeyboard_dll.pdb (Full PDB)

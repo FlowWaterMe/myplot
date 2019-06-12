@@ -150,6 +150,7 @@ public:
 
         textEdit = new QTextEdit(groupBox);
         textEdit->setObjectName(QStringLiteral("textEdit"));
+        textEdit->setCursorWidth(5);
 
         gridLayout_6->addWidget(textEdit, 4, 0, 1, 2);
 
