@@ -160,7 +160,7 @@ public:
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setHorizontalSpacing(0);
         gridLayout->setVerticalSpacing(2);
-        gridLayout->setContentsMargins(6, 30, 6, 6);
+        gridLayout->setContentsMargins(6, 30, 6, 30);
         stackedWidget = new QStackedWidget(SoftKeyboard);
         stackedWidget->setObjectName(QStringLiteral("stackedWidget"));
         stackedWidget->setAcceptDrops(false);
@@ -1046,7 +1046,7 @@ public:
         gridLayout_3->setSpacing(3);
         gridLayout_3->setContentsMargins(11, 11, 11, 11);
         gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
-        gridLayout_3->setContentsMargins(1, 1, 1, 1);
+        gridLayout_3->setContentsMargins(1, 1, 1, 9);
         keyboardPanel_number = new QGridLayout();
         keyboardPanel_number->setSpacing(2);
         keyboardPanel_number->setObjectName(QStringLiteral("keyboardPanel_number"));
@@ -1275,7 +1275,7 @@ public:
 
         retranslateUi(SoftKeyboard);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(SoftKeyboard);

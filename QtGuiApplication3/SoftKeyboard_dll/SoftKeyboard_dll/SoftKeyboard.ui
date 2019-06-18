@@ -68,7 +68,7 @@ QDialog
     <number>6</number>
    </property>
    <property name="bottomMargin">
-    <number>6</number>
+    <number>30</number>
    </property>
    <property name="horizontalSpacing">
     <number>0</number>
@@ -82,7 +82,7 @@ QDialog
       <bool>false</bool>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="page">
       <layout class="QGridLayout" name="gridLayout_2">
@@ -2868,7 +2868,7 @@ QDialog
         <number>1</number>
        </property>
        <property name="bottomMargin">
-        <number>1</number>
+        <number>9</number>
        </property>
        <property name="spacing">
         <number>3</number>
