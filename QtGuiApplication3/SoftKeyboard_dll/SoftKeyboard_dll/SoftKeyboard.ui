@@ -82,7 +82,7 @@ QDialog
       <bool>false</bool>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="page">
       <layout class="QGridLayout" name="gridLayout_2">
@@ -135,10 +135,13 @@ QDialog
            <property name="whatsThis">
             <string>0</string>
            </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -182,7 +185,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -226,7 +229,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -270,7 +273,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -314,7 +317,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -358,7 +361,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -402,7 +405,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -446,7 +449,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -490,7 +493,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -534,7 +537,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -578,7 +581,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -622,7 +625,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -666,7 +669,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -1154,7 +1157,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -1198,7 +1201,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -1615,7 +1618,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -1659,7 +1662,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -2042,7 +2045,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -2086,7 +2089,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -2130,7 +2133,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">
@@ -2553,7 +2556,7 @@ QDialog
            <property name="styleSheet">
             <string notr="true">QPushButton
 {
-	text-align: left;
+	text-align: center;
 }</string>
            </property>
            <property name="text">

@@ -190,9 +190,10 @@ public:
         font1.setWeight(50);
         symbol_AsciiTildeQuote->setFont(font1);
         symbol_AsciiTildeQuote->setFocusPolicy(Qt::NoFocus);
+        symbol_AsciiTildeQuote->setLayoutDirection(Qt::LeftToRight);
         symbol_AsciiTildeQuote->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         symbol_AsciiTildeQuote->setAutoDefault(false);
 
@@ -207,7 +208,7 @@ public:
         number_1->setFocusPolicy(Qt::NoFocus);
         number_1->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         number_1->setAutoDefault(false);
 
@@ -222,7 +223,7 @@ public:
         number_2->setFocusPolicy(Qt::NoFocus);
         number_2->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         number_2->setAutoDefault(false);
 
@@ -237,7 +238,7 @@ public:
         number_3->setFocusPolicy(Qt::NoFocus);
         number_3->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         number_3->setAutoDefault(false);
 
@@ -252,7 +253,7 @@ public:
         number_4->setFocusPolicy(Qt::NoFocus);
         number_4->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         number_4->setAutoDefault(false);
 
@@ -267,7 +268,7 @@ public:
         number_5->setFocusPolicy(Qt::NoFocus);
         number_5->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         number_5->setAutoDefault(false);
 
@@ -282,7 +283,7 @@ public:
         number_6->setFocusPolicy(Qt::NoFocus);
         number_6->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         number_6->setAutoDefault(false);
 
@@ -297,7 +298,7 @@ public:
         number_7->setFocusPolicy(Qt::NoFocus);
         number_7->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         number_7->setAutoDefault(false);
 
@@ -312,7 +313,7 @@ public:
         number_8->setFocusPolicy(Qt::NoFocus);
         number_8->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         number_8->setAutoDefault(false);
 
@@ -327,7 +328,7 @@ public:
         number_9->setFocusPolicy(Qt::NoFocus);
         number_9->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         number_9->setAutoDefault(false);
 
@@ -342,7 +343,7 @@ public:
         number_0->setFocusPolicy(Qt::NoFocus);
         number_0->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         number_0->setAutoDefault(false);
 
@@ -357,7 +358,7 @@ public:
         symbol_MinusUnderscore->setFocusPolicy(Qt::NoFocus);
         symbol_MinusUnderscore->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         symbol_MinusUnderscore->setAutoDefault(false);
 
@@ -372,7 +373,7 @@ public:
         symbol_PlusEqual->setFocusPolicy(Qt::NoFocus);
         symbol_PlusEqual->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         symbol_PlusEqual->setAutoDefault(false);
 
@@ -519,7 +520,7 @@ public:
         symbol_BraceLeftBracketLeft->setFocusPolicy(Qt::NoFocus);
         symbol_BraceLeftBracketLeft->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         symbol_BraceLeftBracketLeft->setAutoDefault(false);
 
@@ -534,7 +535,7 @@ public:
         symbol_BarBackslash->setFocusPolicy(Qt::NoFocus);
         symbol_BarBackslash->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         symbol_BarBackslash->setAutoDefault(false);
 
@@ -660,7 +661,7 @@ public:
         symbol_ColonSemicolon->setFocusPolicy(Qt::NoFocus);
         symbol_ColonSemicolon->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         symbol_ColonSemicolon->setAutoDefault(false);
 
@@ -675,7 +676,7 @@ public:
         symbol_QuoteDblApostrophe->setFocusPolicy(Qt::NoFocus);
         symbol_QuoteDblApostrophe->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         symbol_QuoteDblApostrophe->setAutoDefault(false);
 
@@ -791,7 +792,7 @@ public:
         symbol_LessComma->setFocusPolicy(Qt::NoFocus);
         symbol_LessComma->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         symbol_LessComma->setAutoDefault(false);
 
@@ -806,7 +807,7 @@ public:
         symbol_GreaterPeriod->setFocusPolicy(Qt::NoFocus);
         symbol_GreaterPeriod->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         symbol_GreaterPeriod->setAutoDefault(false);
 
@@ -821,7 +822,7 @@ public:
         symbol_QuestionSlash->setFocusPolicy(Qt::NoFocus);
         symbol_QuestionSlash->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         symbol_QuestionSlash->setAutoDefault(false);
 
@@ -949,7 +950,7 @@ public:
         symbol_BraceRightBracketRight->setFocusPolicy(Qt::NoFocus);
         symbol_BraceRightBracketRight->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
-"	text-align: left;\n"
+"	text-align: center;\n"
 "}"));
         symbol_BraceRightBracketRight->setAutoDefault(false);
 
@@ -1275,7 +1276,7 @@ public:
 
         retranslateUi(SoftKeyboard);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(SoftKeyboard);
