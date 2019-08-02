@@ -7,6 +7,7 @@
 #include <QTextCodec>
 #include "GlobalDllheader.h"
 #include "VAZApplication.h"
+#include "MyKeyBoardButton.h"
 void SetAppStyleSheet(QApplication &App);
 void SetAppCodec(QApplication &App);
 bool InitBase(QString &errStr);
@@ -20,6 +21,9 @@ int main(int argc, char *argv[])
 	SetAppStyleSheet(App);
 	SetAppCodec(App);
 
+	MyKeyBoardButton w;
+	w.resize(400, 400);
+	w.show();
 	QtGuiApplication3 MainWin;
 	App.setMainWindow(&MainWin);
 	MainWin.show();

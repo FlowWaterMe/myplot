@@ -14,6 +14,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QDoubleSpinBox>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHeaderView>
@@ -53,6 +54,7 @@ public:
     QPushButton *pushButton_fn;
     QTextEdit *textEdit;
     QLineEdit *lineEdit_2;
+    QDoubleSpinBox *doubleSpinBox;
     QTabWidget *tabWidget;
     QWidget *t1;
     QGridLayout *gridLayout_2;
@@ -158,6 +160,11 @@ public:
         lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
 
         gridLayout_6->addWidget(lineEdit_2, 1, 0, 1, 1);
+
+        doubleSpinBox = new QDoubleSpinBox(groupBox);
+        doubleSpinBox->setObjectName(QStringLiteral("doubleSpinBox"));
+
+        gridLayout_6->addWidget(doubleSpinBox, 1, 1, 1, 1);
 
 
         gridLayout_3->addWidget(groupBox, 0, 0, 1, 1);

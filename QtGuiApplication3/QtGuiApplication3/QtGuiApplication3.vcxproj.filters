@@ -112,6 +112,9 @@
     <ClCompile Include="GeneratedFiles\Release\moc_VAZApplication.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="MyKeyBoardButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QtGuiApplication3.h">
@@ -178,5 +181,10 @@
     <Image Include="Resources\image\switch_on.png">
       <Filter>Resource Files</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MyKeyBoardButton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>

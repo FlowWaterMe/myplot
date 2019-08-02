@@ -117,6 +117,9 @@
          <item row="1" column="0">
           <widget class="QLineEdit" name="lineEdit_2"/>
          </item>
+         <item row="1" column="1">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
+         </item>
         </layout>
        </widget>
       </item>

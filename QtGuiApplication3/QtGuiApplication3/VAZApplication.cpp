@@ -284,6 +284,7 @@ void CVAZApplication::NotifyStandby(QObject *obj, QEvent *e)
         && m_MainWin != nullptr)
     {
        // m_MainWin->ExitStandby();
+		
     }
 }
 
