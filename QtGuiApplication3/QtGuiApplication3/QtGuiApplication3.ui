@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtGuiApplication3Class</class>
+ <widget class="QMainWindow" name="QtGuiApplication3Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>871</width>
+    <height>735</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtGuiApplication3</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_3" columnstretch="1,2" columnminimumwidth="1,1">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>GroupBox</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="1">
+          <widget class="CMySlideSwitch" name="label">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <widget class="QTableWidget" name="tableWidget"/>
+         </item>
+         <item row="3" column="0" colspan="2">
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButton_zhuxing">
+             <property name="text">
+              <string>柱形</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_zhexian">
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>折线</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pushButton_yb">
+             <property name="text">
+              <string>样本图形</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pushButton_zk">
+             <property name="text">
+              <string>质控图</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pushButton_dq">
+             <property name="text">
+              <string>定标曲线</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="pushButton_fn">
+             <property name="text">
+              <string>反应浓度图</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="4" column="0" colspan="2">
+          <widget class="QTextEdit" name="textEdit">
+           <property name="cursorWidth">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="lineEdit_2"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>4</number>
+        </property>
+        <widget class="QWidget" name="t1">
+         <attribute name="title">
+          <string>样本图</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="CCurvePlot" name="widget" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="t2">
+         <attribute name="title">
+          <string>常规图</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QCustomPlot" name="widget_com" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="t3">
+         <attribute name="title">
+          <string>质控图</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <widget class="CQcPlot" name="widget_QC" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="t4">
+         <attribute name="title">
+          <string>定标曲线</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="0" column="0">
+           <widget class="CCurvePlot" name="widget_DB" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="t5">
+         <attribute name="title">
+          <string>反应浓度图</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="0" column="0">
+           <widget class="CCurvePlot" name="widget_FN" native="true"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>871</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CMySlideSwitch</class>
+   <extends>QLabel</extends>
+   <header location="global">../control/MySlideSwitch.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CCurvePlot</class>
+   <extends>QWidget</extends>
+   <header>CurvePlot.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CQcPlot</class>
+   <extends>QWidget</extends>
+   <header>QCCurvePlot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="QtGuiApplication3.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{6db752c2-24c2-4f97-b454-072ab7c25531}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{8f100e34-805a-4b0a-adbc-e01af6bf2c21}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="control">
+      <UniqueIdentifier>{5708c08d-b247-404d-be80-a957d129304a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QtGuiApplication3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QtGuiApplication3.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QtGuiApplication3.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_QtGuiApplication3.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="myqwizard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_myqwizard.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_myqwizard.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MySlideSwitch.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MySlideSwitch.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="control\MySlideSwitch.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="qcustomplot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qcustomplot.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qcustomplot.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="CurvePlot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CurvePlot.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CurvePlot.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QCCurvePlot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QCCurvePlot.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QCCurvePlot.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="VAZApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VAZApplication.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VAZApplication.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MyKeyBoardButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="QtGuiApplication3.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtGuiApplication3.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QtGuiApplication3.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="myqwizard.hpp">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="control\MySlideSwitch.h">
+      <Filter>control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qcustomplot.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CurvePlot.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QCCurvePlot.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="VAZApplication.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_QtGuiApplication3.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AppParam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalDllheader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="APPFun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\image\Left_arrow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\image\Right_arrow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\image\sort_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\image\sort_up.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\image\switch_off.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\image\switch_on.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MyKeyBoardButton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>
