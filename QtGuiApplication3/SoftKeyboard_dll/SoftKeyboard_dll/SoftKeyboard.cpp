@@ -65,6 +65,13 @@ void CSoftKeyboard::InitKeyboard()
 		pBtn = dynamic_cast<QPushButton*>(*it);
 		if (pBtn == nullptr)
 			continue;
+		QString button_style = "QPushButton{background-color:black;\
+                                      color: white;   border-radius: 10px;  border: 2px groove gray;\
+                                      border-style: outset;}"
+			"QPushButton:hover{background-color:white; color: black;}"
+			"QPushButton:pressed{background-color:rgb(85, 170, 255);\
+                                                     border-style: inset; }";
+		pBtn->setStyleSheet(button_style);
 		connect(pBtn, SIGNAL(clicked()), this, SLOT(SlotBtnClicked()));
 	}
 
@@ -620,25 +627,16 @@ void CSoftKeyboard::setDialog()
 			if (pEdt->validator()->inherits("QIntValidator") || pEdt->validator()->inherits("QDoubleValidator"))
 			{
 				ui->stackedWidget->setCurrentIndex(ePageStyle_OnlyNumber);
+				return;
 			}
-			else
-			{
-				ui->stackedWidget->setCurrentIndex(ePageStyle_All);
-			}
-		}
-		else
-		{
-			ui->stackedWidget->setCurrentIndex(ePageStyle_All);
 		}
 	}
 	if (dynamic_cast<QDoubleSpinBox*>(m_CallObj) != Q_NULLPTR)
 	{
 		ui->stackedWidget->setCurrentIndex(ePageStyle_OnlyNumber);
+		return;
 	}
-	else
-	{
-		ui->stackedWidget->setCurrentIndex(ePageStyle_All);
-	}
+	ui->stackedWidget->setCurrentIndex(ePageStyle_All);
 }
 
 
@@ -650,6 +648,19 @@ void RegisterObject(QObject *obj)
 void ShowKeyboard()
 {
 	CSoftKeyboard::GetInstance().setDialog();
+	QDesktopWidget *pDesktopWidget = QApplication::desktop();
+	QPoint movePoint;
+	if (QCursor::pos().y() > pDesktopWidget->height() / 2)
+		// 靠上居中显示
+	{
+		movePoint = QPoint(pDesktopWidget->height() / 2 - 300, 0);
+	}
+	else
+	{
+		// 靠下居中显示
+		movePoint = QPoint(pDesktopWidget->height() / 2 - 300, pDesktopWidget->height() - 400);
+	}
+	CSoftKeyboard::GetInstance().move(movePoint);
     CSoftKeyboard::GetInstance().show();
 }
 

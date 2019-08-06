@@ -37,7 +37,7 @@
           </widget>
          </item>
          <item row="0" column="0">
-          <widget class="QLineEdit" name="lineEdit">
+          <widget class="CMyLineEdit" name="lineEdit">
            <property name="text">
             <string/>
            </property>
@@ -228,6 +228,11 @@
    <extends>QWidget</extends>
    <header>QCCurvePlot.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CMyLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>MyLineEdit.h</header>
   </customwidget>
  </customwidgets>
  <resources>

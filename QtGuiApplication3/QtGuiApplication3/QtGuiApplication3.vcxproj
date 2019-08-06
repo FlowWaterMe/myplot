@@ -167,6 +167,7 @@
     </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MyKeyBoardButton.cpp" />
+    <ClCompile Include="MyLineEdit.cpp" />
     <ClCompile Include="myqwizard.cpp" />
     <ClCompile Include="QCCurvePlot.cpp" />
     <ClCompile Include="qcustomplot.cpp" />
@@ -201,6 +202,7 @@
     <ClInclude Include="APPFun.h" />
     <ClInclude Include="GlobalDefine.h" />
     <ClInclude Include="GlobalDllheader.h" />
+    <QtMoc Include="MyLineEdit.h" />
     <QtMoc Include="MyKeyBoardButton.h" />
     <CustomBuild Include="VAZApplication.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>

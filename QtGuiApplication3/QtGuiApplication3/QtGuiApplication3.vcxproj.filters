@@ -115,6 +115,9 @@
     <ClCompile Include="MyKeyBoardButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MyLineEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QtGuiApplication3.h">
@@ -184,6 +187,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MyKeyBoardButton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MyLineEdit.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

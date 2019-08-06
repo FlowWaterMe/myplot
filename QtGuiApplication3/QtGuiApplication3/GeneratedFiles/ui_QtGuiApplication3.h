@@ -29,6 +29,7 @@
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 #include "CurvePlot.h"
+#include "MyLineEdit.h"
 #include "QCCurvePlot.h"
 #include "qcustomplot.h"
 
@@ -43,7 +44,7 @@ public:
     QGroupBox *groupBox;
     QGridLayout *gridLayout_6;
     CMySlideSwitch *label;
-    QLineEdit *lineEdit;
+    CMyLineEdit *lineEdit;
     QTableWidget *tableWidget;
     QGridLayout *gridLayout_5;
     QPushButton *pushButton_zhuxing;
@@ -101,7 +102,7 @@ public:
 
         gridLayout_6->addWidget(label, 0, 1, 1, 1);
 
-        lineEdit = new QLineEdit(groupBox);
+        lineEdit = new CMyLineEdit(groupBox);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
 
         gridLayout_6->addWidget(lineEdit, 0, 0, 1, 1);

@@ -9,6 +9,7 @@
 #include <QFile>
 #include <QTextStream>
 #include "control/MySlideSwitch.h"
+#include "MyLineEdit.h"
 enum ETablePara
 {
 	eTablePara_No = 0,

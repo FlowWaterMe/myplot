@@ -8,6 +8,7 @@
 #include <QPlainTextEdit>
 #include <QPoint>
 #include "softkeyboard_dll_global.h"
+#include <QDeskTopWidget>
 namespace Ui {
 class SoftKeyboard;
 }
