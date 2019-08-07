@@ -213,15 +213,16 @@ void CSoftKeyboard::FunctionKeyDealWith(EKey eKey)
     case eKey_Enter: EnterFunctionKey(); break;
     case eKey_Shift: ShiftFunctionKey(); break;
     case eKey_PgUp: PgFunctionKey(true); break;
-    case eKey_Up: break;            // ио
+    case eKey_Up: Key_Up_FunctionKey();break;            // ио
     case eKey_PgDn: PgFunctionKey(false); break;
     case eKey_Ctrl: CtrlFunctionKey(); break;
     case eKey_EN_CH: EN_CHFunctionKey(); break;
     case eKey_Alt: AltFunctionKey(); break;
     case eKey_Space: SpaceFunctionKey(); break;
-    case eKey_Left: break;
-    case eKey_Down: break;
-    case eKey_Right:
+    case eKey_Left: Key_Left_FunctionKey();break;
+    case eKey_Down: Key_Down_FunctionKey();break;
+	case eKey_Right:Key_Right_FunctionKey(); break;
+
     default: break;
     }
 }
@@ -325,6 +326,38 @@ void CSoftKeyboard::PgFunctionKey(bool bIsUp)
     bIsUp ? LastPageChinese() : NextPageChinese();
 }
 
+void CSoftKeyboard::Key_Left_FunctionKey()
+{
+	Qt::KeyboardModifiers Modifier = Qt::NoModifier;
+	int involvedKeys = 1;
+	QString ch = ui->control_ArrowLeft->text();
+	QKeyEvent keyEvent(QEvent::KeyPress, Qt::Key_Left, Modifier, ch, false, involvedKeys);
+	QApplication::sendEvent(m_CallObj, &keyEvent);
+}
+void CSoftKeyboard::Key_Right_FunctionKey()
+{
+	Qt::KeyboardModifiers Modifier = Qt::NoModifier;
+	int involvedKeys = 1;
+	QString ch = ui->control_ArrowRight->text();
+	QKeyEvent keyEvent(QEvent::KeyPress, Qt::Key_Right, Modifier, ch, false, involvedKeys);
+	QApplication::sendEvent(m_CallObj, &keyEvent);
+}
+void CSoftKeyboard::Key_Down_FunctionKey()
+{
+	Qt::KeyboardModifiers Modifier = Qt::NoModifier;
+	int involvedKeys = 1;
+	QString ch = ui->control_ArrowDown->text();
+	QKeyEvent keyEvent(QEvent::KeyPress, Qt::Key_Down, Modifier, ch, false, involvedKeys);
+	QApplication::sendEvent(m_CallObj, &keyEvent);
+}
+void CSoftKeyboard::Key_Up_FunctionKey()
+{
+	Qt::KeyboardModifiers Modifier = Qt::NoModifier;
+	int involvedKeys = 1;
+	QString ch = ui->control_ArrowUp->text();
+	QKeyEvent keyEvent(QEvent::KeyPress, Qt::Key_Up, Modifier, ch, false, involvedKeys);
+	QApplication::sendEvent(m_CallObj, &keyEvent);
+}
 void CSoftKeyboard::QueriedChinese()
 {
     if(!m_DBSql.isOpen())
@@ -517,6 +550,21 @@ void CSoftKeyboard::SlotBtnClicked()
     SymbolDealWith(eKey);
     LetterDealWith(eKey);
     FunctionKeyDealWith(eKey);
+	QTextEdit* pTextEdt = dynamic_cast<QTextEdit*>(m_CallObj);
+	if (pTextEdt != nullptr)
+	{
+		pTextEdt->setFocus();
+	}
+	QLineEdit* pLineEdt = dynamic_cast<QLineEdit*>(m_CallObj);
+	if (pLineEdt != nullptr)
+	{
+		pLineEdt->setFocus();
+	}
+	QDoubleSpinBox* pDoubleSpinBox = dynamic_cast<QDoubleSpinBox*>(m_CallObj);
+	if (pDoubleSpinBox != Q_NULLPTR)
+	{
+		pDoubleSpinBox->setFocus();
+	}
 }
 
 void CSoftKeyboard::mousePressEvent(QMouseEvent *event)

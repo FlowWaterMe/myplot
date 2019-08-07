@@ -151,6 +151,10 @@ private:
     void SwitchShift();
     void SwitchCtrl();
     void SwitchAlt();
+	void Key_Left_FunctionKey();
+	void Key_Right_FunctionKey();
+	void Key_Down_FunctionKey();
+	void Key_Up_FunctionKey();
 
 private Q_SLOTS:
     void SlotBtnClicked();
