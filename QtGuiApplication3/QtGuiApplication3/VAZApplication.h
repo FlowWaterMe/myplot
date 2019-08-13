@@ -15,6 +15,7 @@ public:
 /*自定义虚拟软键盘*/
 typedef void(*fpRegisterObject)(QObject* obj);
 typedef void(*fpShowKeyboard)();
+typedef QObject *(*fpGetRegisterObject)();
 /*自定义虚拟软键盘*/
 
 class CVAZApplication : public QApplication
@@ -50,6 +51,7 @@ private:
 	QtGuiApplication3 *m_MainWin;
     fpRegisterObject m_fpRegisterObject;
     fpShowKeyboard m_fpShowKeyboard;
+	fpGetRegisterObject m_GetRegisterObject;
 };
 
 CVAZApplication &GetApplication();

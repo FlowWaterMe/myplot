@@ -31,6 +31,7 @@ QtGuiApplication3::QtGuiApplication3(QWidget *parent)
 	initCustomPlot();
 	//dealDrawLine();
 	ui->tabWidget->setCurrentIndex(0);
+	Highlighter * h = new Highlighter(ui->textEdit->document());
 	connect(ui->pushButton_zhexian, SIGNAL(clicked()), this, SLOT(dealDrawLine()));
 	connect(ui->pushButton_zhuxing, SIGNAL(clicked()), this, SLOT(dealDrawBarChart()));
 	connect(ui->pushButton_yb, SIGNAL(clicked()), this, SLOT(dealDrawYB()));

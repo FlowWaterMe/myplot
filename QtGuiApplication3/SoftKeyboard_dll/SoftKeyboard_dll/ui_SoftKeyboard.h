@@ -31,68 +31,69 @@ public:
     QWidget *page;
     QGridLayout *gridLayout_2;
     QGridLayout *keyboardPanel;
+    QPushButton *symbol_BarBackslash;
+    QPushButton *control_CapsLock;
+    QPushButton *symbol_BraceLeftBracketLeft;
+    QPushButton *letter_P;
+    QPushButton *letter_D;
+    QPushButton *letter_S;
+    QPushButton *letter_A;
+    QPushButton *letter_F;
+    QPushButton *letter_J;
+    QPushButton *letter_G;
+    QPushButton *letter_H;
     QPushButton *symbol_AsciiTildeQuote;
     QPushButton *number_1;
     QPushButton *number_2;
-    QPushButton *number_3;
-    QPushButton *number_4;
     QPushButton *number_5;
     QPushButton *number_6;
-    QPushButton *number_7;
+    QPushButton *number_4;
+    QPushButton *number_3;
     QPushButton *number_8;
-    QPushButton *number_9;
     QPushButton *number_0;
-    QPushButton *symbol_MinusUnderscore;
+    QPushButton *number_9;
+    QPushButton *number_7;
     QPushButton *symbol_PlusEqual;
-    QPushButton *control_Backspace;
+    QPushButton *symbol_MinusUnderscore;
     QPushButton *control_Tab;
     QPushButton *letter_Q;
     QPushButton *letter_W;
     QPushButton *letter_E;
     QPushButton *letter_R;
+    QPushButton *letter_U;
     QPushButton *letter_T;
     QPushButton *letter_Y;
-    QPushButton *letter_U;
     QPushButton *letter_I;
     QPushButton *letter_O;
-    QPushButton *letter_P;
-    QPushButton *symbol_BraceLeftBracketLeft;
-    QPushButton *symbol_BarBackslash;
-    QPushButton *control_CapsLock;
-    QPushButton *letter_A;
-    QPushButton *letter_S;
-    QPushButton *letter_D;
-    QPushButton *letter_F;
-    QPushButton *letter_G;
-    QPushButton *letter_H;
-    QPushButton *letter_J;
-    QPushButton *letter_K;
-    QPushButton *letter_L;
     QPushButton *symbol_ColonSemicolon;
     QPushButton *symbol_QuoteDblApostrophe;
-    QPushButton *control_Enter;
+    QPushButton *letter_L;
+    QPushButton *letter_K;
     QPushButton *control_LeftShift;
     QPushButton *letter_Z;
+    QPushButton *control_Enter;
     QPushButton *letter_X;
     QPushButton *letter_C;
     QPushButton *letter_V;
     QPushButton *letter_B;
     QPushButton *letter_N;
-    QPushButton *letter_M;
     QPushButton *symbol_LessComma;
+    QPushButton *letter_M;
     QPushButton *symbol_GreaterPeriod;
+    QPushButton *control_ArrowUp;
     QPushButton *symbol_QuestionSlash;
     QPushButton *control_PageUp;
-    QPushButton *control_ArrowUp;
-    QPushButton *control_PageDown;
     QPushButton *control_LeftCtrl;
     QPushButton *control_Language;
+    QPushButton *control_PageDown;
+    QPushButton *control_ArrowDown;
+    QPushButton *control_ArrowLeft;
     QPushButton *control_LeftAlt;
     QPushButton *control_Space;
-    QPushButton *control_ArrowLeft;
-    QPushButton *control_ArrowDown;
-    QPushButton *control_ArrowRight;
     QPushButton *symbol_BraceRightBracketRight;
+    QPushButton *control_ArrowRight;
+    QPushButton *control_Backspace;
+    QPushButton *control_Disable;
     QLabel *language_Pinyin;
     QLabel *language_CH1;
     QLabel *language_CH2;
@@ -110,12 +111,12 @@ public:
     QPushButton *number_D3;
     QPushButton *number_D6;
     QPushButton *number_D7;
-    QPushButton *number_D8;
     QPushButton *number_D4;
-    QPushButton *number_D5;
-    QPushButton *number_D9;
-    QPushButton *number_D0;
+    QPushButton *number_D8;
     QPushButton *number_D1;
+    QPushButton *number_D9;
+    QPushButton *number_D5;
+    QPushButton *number_D0;
     QPushButton *number_D2;
     QPushButton *symbol_GreaterPeriod_num;
     QPushButton *control_Backspace_num;
@@ -124,7 +125,7 @@ public:
     {
         if (SoftKeyboard->objectName().isEmpty())
             SoftKeyboard->setObjectName(QStringLiteral("SoftKeyboard"));
-        SoftKeyboard->resize(800, 366);
+        SoftKeyboard->resize(825, 385);
         SoftKeyboard->setMinimumSize(QSize(800, 280));
         QFont font;
         font.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
@@ -158,36 +159,164 @@ public:
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        gridLayout->setHorizontalSpacing(0);
-        gridLayout->setVerticalSpacing(2);
-        gridLayout->setContentsMargins(6, 30, 6, 30);
         stackedWidget = new QStackedWidget(SoftKeyboard);
         stackedWidget->setObjectName(QStringLiteral("stackedWidget"));
         stackedWidget->setAcceptDrops(false);
         page = new QWidget();
         page->setObjectName(QStringLiteral("page"));
         gridLayout_2 = new QGridLayout(page);
-        gridLayout_2->setSpacing(3);
+        gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
-        gridLayout_2->setContentsMargins(1, 1, 1, 1);
+        gridLayout_2->setContentsMargins(9, 20, 9, 20);
         keyboardPanel = new QGridLayout();
         keyboardPanel->setSpacing(2);
         keyboardPanel->setObjectName(QStringLiteral("keyboardPanel"));
-        symbol_AsciiTildeQuote = new QPushButton(page);
-        symbol_AsciiTildeQuote->setObjectName(QStringLiteral("symbol_AsciiTildeQuote"));
+        keyboardPanel->setContentsMargins(-1, 0, -1, -1);
+        symbol_BarBackslash = new QPushButton(page);
+        symbol_BarBackslash->setObjectName(QStringLiteral("symbol_BarBackslash"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(symbol_AsciiTildeQuote->sizePolicy().hasHeightForWidth());
-        symbol_AsciiTildeQuote->setSizePolicy(sizePolicy);
-        symbol_AsciiTildeQuote->setMinimumSize(QSize(36, 32));
+        sizePolicy.setHeightForWidth(symbol_BarBackslash->sizePolicy().hasHeightForWidth());
+        symbol_BarBackslash->setSizePolicy(sizePolicy);
+        symbol_BarBackslash->setMinimumSize(QSize(50, 32));
         QFont font1;
         font1.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
         font1.setPointSize(10);
         font1.setBold(false);
         font1.setItalic(false);
         font1.setWeight(50);
+        symbol_BarBackslash->setFont(font1);
+        symbol_BarBackslash->setFocusPolicy(Qt::NoFocus);
+        symbol_BarBackslash->setStyleSheet(QLatin1String("QPushButton\n"
+"{\n"
+"	text-align: center;\n"
+"}"));
+        symbol_BarBackslash->setAutoDefault(false);
+
+        keyboardPanel->addWidget(symbol_BarBackslash, 1, 38, 1, 2);
+
+        control_CapsLock = new QPushButton(page);
+        control_CapsLock->setObjectName(QStringLiteral("control_CapsLock"));
+        sizePolicy.setHeightForWidth(control_CapsLock->sizePolicy().hasHeightForWidth());
+        control_CapsLock->setSizePolicy(sizePolicy);
+        control_CapsLock->setMinimumSize(QSize(75, 32));
+        control_CapsLock->setFont(font1);
+        control_CapsLock->setFocusPolicy(Qt::NoFocus);
+        control_CapsLock->setCheckable(true);
+        control_CapsLock->setAutoDefault(false);
+
+        keyboardPanel->addWidget(control_CapsLock, 2, 0, 1, 3);
+
+        symbol_BraceLeftBracketLeft = new QPushButton(page);
+        symbol_BraceLeftBracketLeft->setObjectName(QStringLiteral("symbol_BraceLeftBracketLeft"));
+        sizePolicy.setHeightForWidth(symbol_BraceLeftBracketLeft->sizePolicy().hasHeightForWidth());
+        symbol_BraceLeftBracketLeft->setSizePolicy(sizePolicy);
+        symbol_BraceLeftBracketLeft->setMinimumSize(QSize(36, 32));
+        symbol_BraceLeftBracketLeft->setFont(font1);
+        symbol_BraceLeftBracketLeft->setFocusPolicy(Qt::NoFocus);
+        symbol_BraceLeftBracketLeft->setStyleSheet(QLatin1String("QPushButton\n"
+"{\n"
+"	text-align: center;\n"
+"}"));
+        symbol_BraceLeftBracketLeft->setAutoDefault(false);
+
+        keyboardPanel->addWidget(symbol_BraceLeftBracketLeft, 1, 32, 1, 3);
+
+        letter_P = new QPushButton(page);
+        letter_P->setObjectName(QStringLiteral("letter_P"));
+        sizePolicy.setHeightForWidth(letter_P->sizePolicy().hasHeightForWidth());
+        letter_P->setSizePolicy(sizePolicy);
+        letter_P->setMinimumSize(QSize(36, 32));
+        letter_P->setFont(font1);
+        letter_P->setFocusPolicy(Qt::NoFocus);
+        letter_P->setAutoDefault(false);
+
+        keyboardPanel->addWidget(letter_P, 1, 29, 1, 3);
+
+        letter_D = new QPushButton(page);
+        letter_D->setObjectName(QStringLiteral("letter_D"));
+        sizePolicy.setHeightForWidth(letter_D->sizePolicy().hasHeightForWidth());
+        letter_D->setSizePolicy(sizePolicy);
+        letter_D->setMinimumSize(QSize(36, 32));
+        letter_D->setFont(font1);
+        letter_D->setFocusPolicy(Qt::NoFocus);
+        letter_D->setAutoDefault(false);
+
+        keyboardPanel->addWidget(letter_D, 2, 9, 1, 3);
+
+        letter_S = new QPushButton(page);
+        letter_S->setObjectName(QStringLiteral("letter_S"));
+        sizePolicy.setHeightForWidth(letter_S->sizePolicy().hasHeightForWidth());
+        letter_S->setSizePolicy(sizePolicy);
+        letter_S->setMinimumSize(QSize(36, 32));
+        letter_S->setFont(font1);
+        letter_S->setFocusPolicy(Qt::NoFocus);
+        letter_S->setAutoDefault(false);
+
+        keyboardPanel->addWidget(letter_S, 2, 6, 1, 3);
+
+        letter_A = new QPushButton(page);
+        letter_A->setObjectName(QStringLiteral("letter_A"));
+        sizePolicy.setHeightForWidth(letter_A->sizePolicy().hasHeightForWidth());
+        letter_A->setSizePolicy(sizePolicy);
+        letter_A->setMinimumSize(QSize(36, 32));
+        letter_A->setFont(font1);
+        letter_A->setFocusPolicy(Qt::NoFocus);
+        letter_A->setAutoDefault(false);
+
+        keyboardPanel->addWidget(letter_A, 2, 3, 1, 3);
+
+        letter_F = new QPushButton(page);
+        letter_F->setObjectName(QStringLiteral("letter_F"));
+        sizePolicy.setHeightForWidth(letter_F->sizePolicy().hasHeightForWidth());
+        letter_F->setSizePolicy(sizePolicy);
+        letter_F->setMinimumSize(QSize(36, 32));
+        letter_F->setFont(font1);
+        letter_F->setFocusPolicy(Qt::NoFocus);
+        letter_F->setAutoDefault(false);
+
+        keyboardPanel->addWidget(letter_F, 2, 12, 1, 3);
+
+        letter_J = new QPushButton(page);
+        letter_J->setObjectName(QStringLiteral("letter_J"));
+        sizePolicy.setHeightForWidth(letter_J->sizePolicy().hasHeightForWidth());
+        letter_J->setSizePolicy(sizePolicy);
+        letter_J->setMinimumSize(QSize(36, 32));
+        letter_J->setFont(font1);
+        letter_J->setFocusPolicy(Qt::NoFocus);
+        letter_J->setAutoDefault(false);
+
+        keyboardPanel->addWidget(letter_J, 2, 21, 1, 3);
+
+        letter_G = new QPushButton(page);
+        letter_G->setObjectName(QStringLiteral("letter_G"));
+        sizePolicy.setHeightForWidth(letter_G->sizePolicy().hasHeightForWidth());
+        letter_G->setSizePolicy(sizePolicy);
+        letter_G->setMinimumSize(QSize(36, 32));
+        letter_G->setFont(font1);
+        letter_G->setFocusPolicy(Qt::NoFocus);
+        letter_G->setAutoDefault(false);
+
+        keyboardPanel->addWidget(letter_G, 2, 15, 1, 3);
+
+        letter_H = new QPushButton(page);
+        letter_H->setObjectName(QStringLiteral("letter_H"));
+        sizePolicy.setHeightForWidth(letter_H->sizePolicy().hasHeightForWidth());
+        letter_H->setSizePolicy(sizePolicy);
+        letter_H->setMinimumSize(QSize(36, 32));
+        letter_H->setFont(font1);
+        letter_H->setFocusPolicy(Qt::NoFocus);
+        letter_H->setAutoDefault(false);
+
+        keyboardPanel->addWidget(letter_H, 2, 18, 1, 3);
+
+        symbol_AsciiTildeQuote = new QPushButton(page);
+        symbol_AsciiTildeQuote->setObjectName(QStringLiteral("symbol_AsciiTildeQuote"));
+        sizePolicy.setHeightForWidth(symbol_AsciiTildeQuote->sizePolicy().hasHeightForWidth());
+        symbol_AsciiTildeQuote->setSizePolicy(sizePolicy);
+        symbol_AsciiTildeQuote->setMinimumSize(QSize(36, 32));
         symbol_AsciiTildeQuote->setFont(font1);
         symbol_AsciiTildeQuote->setFocusPolicy(Qt::NoFocus);
         symbol_AsciiTildeQuote->setLayoutDirection(Qt::LeftToRight);
@@ -229,36 +358,6 @@ public:
 
         keyboardPanel->addWidget(number_2, 0, 4, 1, 3);
 
-        number_3 = new QPushButton(page);
-        number_3->setObjectName(QStringLiteral("number_3"));
-        sizePolicy.setHeightForWidth(number_3->sizePolicy().hasHeightForWidth());
-        number_3->setSizePolicy(sizePolicy);
-        number_3->setMinimumSize(QSize(36, 32));
-        number_3->setFont(font1);
-        number_3->setFocusPolicy(Qt::NoFocus);
-        number_3->setStyleSheet(QLatin1String("QPushButton\n"
-"{\n"
-"	text-align: center;\n"
-"}"));
-        number_3->setAutoDefault(false);
-
-        keyboardPanel->addWidget(number_3, 0, 7, 1, 3);
-
-        number_4 = new QPushButton(page);
-        number_4->setObjectName(QStringLiteral("number_4"));
-        sizePolicy.setHeightForWidth(number_4->sizePolicy().hasHeightForWidth());
-        number_4->setSizePolicy(sizePolicy);
-        number_4->setMinimumSize(QSize(36, 32));
-        number_4->setFont(font1);
-        number_4->setFocusPolicy(Qt::NoFocus);
-        number_4->setStyleSheet(QLatin1String("QPushButton\n"
-"{\n"
-"	text-align: center;\n"
-"}"));
-        number_4->setAutoDefault(false);
-
-        keyboardPanel->addWidget(number_4, 0, 10, 1, 3);
-
         number_5 = new QPushButton(page);
         number_5->setObjectName(QStringLiteral("number_5"));
         sizePolicy.setHeightForWidth(number_5->sizePolicy().hasHeightForWidth());
@@ -289,20 +388,35 @@ public:
 
         keyboardPanel->addWidget(number_6, 0, 16, 1, 3);
 
-        number_7 = new QPushButton(page);
-        number_7->setObjectName(QStringLiteral("number_7"));
-        sizePolicy.setHeightForWidth(number_7->sizePolicy().hasHeightForWidth());
-        number_7->setSizePolicy(sizePolicy);
-        number_7->setMinimumSize(QSize(36, 32));
-        number_7->setFont(font1);
-        number_7->setFocusPolicy(Qt::NoFocus);
-        number_7->setStyleSheet(QLatin1String("QPushButton\n"
+        number_4 = new QPushButton(page);
+        number_4->setObjectName(QStringLiteral("number_4"));
+        sizePolicy.setHeightForWidth(number_4->sizePolicy().hasHeightForWidth());
+        number_4->setSizePolicy(sizePolicy);
+        number_4->setMinimumSize(QSize(36, 32));
+        number_4->setFont(font1);
+        number_4->setFocusPolicy(Qt::NoFocus);
+        number_4->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	text-align: center;\n"
 "}"));
-        number_7->setAutoDefault(false);
+        number_4->setAutoDefault(false);
 
-        keyboardPanel->addWidget(number_7, 0, 19, 1, 3);
+        keyboardPanel->addWidget(number_4, 0, 10, 1, 3);
+
+        number_3 = new QPushButton(page);
+        number_3->setObjectName(QStringLiteral("number_3"));
+        sizePolicy.setHeightForWidth(number_3->sizePolicy().hasHeightForWidth());
+        number_3->setSizePolicy(sizePolicy);
+        number_3->setMinimumSize(QSize(36, 32));
+        number_3->setFont(font1);
+        number_3->setFocusPolicy(Qt::NoFocus);
+        number_3->setStyleSheet(QLatin1String("QPushButton\n"
+"{\n"
+"	text-align: center;\n"
+"}"));
+        number_3->setAutoDefault(false);
+
+        keyboardPanel->addWidget(number_3, 0, 7, 1, 3);
 
         number_8 = new QPushButton(page);
         number_8->setObjectName(QStringLiteral("number_8"));
@@ -319,21 +433,6 @@ public:
 
         keyboardPanel->addWidget(number_8, 0, 22, 1, 3);
 
-        number_9 = new QPushButton(page);
-        number_9->setObjectName(QStringLiteral("number_9"));
-        sizePolicy.setHeightForWidth(number_9->sizePolicy().hasHeightForWidth());
-        number_9->setSizePolicy(sizePolicy);
-        number_9->setMinimumSize(QSize(36, 32));
-        number_9->setFont(font1);
-        number_9->setFocusPolicy(Qt::NoFocus);
-        number_9->setStyleSheet(QLatin1String("QPushButton\n"
-"{\n"
-"	text-align: center;\n"
-"}"));
-        number_9->setAutoDefault(false);
-
-        keyboardPanel->addWidget(number_9, 0, 25, 1, 3);
-
         number_0 = new QPushButton(page);
         number_0->setObjectName(QStringLiteral("number_0"));
         sizePolicy.setHeightForWidth(number_0->sizePolicy().hasHeightForWidth());
@@ -349,20 +448,35 @@ public:
 
         keyboardPanel->addWidget(number_0, 0, 28, 1, 3);
 
-        symbol_MinusUnderscore = new QPushButton(page);
-        symbol_MinusUnderscore->setObjectName(QStringLiteral("symbol_MinusUnderscore"));
-        sizePolicy.setHeightForWidth(symbol_MinusUnderscore->sizePolicy().hasHeightForWidth());
-        symbol_MinusUnderscore->setSizePolicy(sizePolicy);
-        symbol_MinusUnderscore->setMinimumSize(QSize(36, 32));
-        symbol_MinusUnderscore->setFont(font1);
-        symbol_MinusUnderscore->setFocusPolicy(Qt::NoFocus);
-        symbol_MinusUnderscore->setStyleSheet(QLatin1String("QPushButton\n"
+        number_9 = new QPushButton(page);
+        number_9->setObjectName(QStringLiteral("number_9"));
+        sizePolicy.setHeightForWidth(number_9->sizePolicy().hasHeightForWidth());
+        number_9->setSizePolicy(sizePolicy);
+        number_9->setMinimumSize(QSize(36, 32));
+        number_9->setFont(font1);
+        number_9->setFocusPolicy(Qt::NoFocus);
+        number_9->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	text-align: center;\n"
 "}"));
-        symbol_MinusUnderscore->setAutoDefault(false);
+        number_9->setAutoDefault(false);
 
-        keyboardPanel->addWidget(symbol_MinusUnderscore, 0, 31, 1, 3);
+        keyboardPanel->addWidget(number_9, 0, 25, 1, 3);
+
+        number_7 = new QPushButton(page);
+        number_7->setObjectName(QStringLiteral("number_7"));
+        sizePolicy.setHeightForWidth(number_7->sizePolicy().hasHeightForWidth());
+        number_7->setSizePolicy(sizePolicy);
+        number_7->setMinimumSize(QSize(36, 32));
+        number_7->setFont(font1);
+        number_7->setFocusPolicy(Qt::NoFocus);
+        number_7->setStyleSheet(QLatin1String("QPushButton\n"
+"{\n"
+"	text-align: center;\n"
+"}"));
+        number_7->setAutoDefault(false);
+
+        keyboardPanel->addWidget(number_7, 0, 19, 1, 3);
 
         symbol_PlusEqual = new QPushButton(page);
         symbol_PlusEqual->setObjectName(QStringLiteral("symbol_PlusEqual"));
@@ -379,16 +493,20 @@ public:
 
         keyboardPanel->addWidget(symbol_PlusEqual, 0, 34, 1, 3);
 
-        control_Backspace = new QPushButton(page);
-        control_Backspace->setObjectName(QStringLiteral("control_Backspace"));
-        sizePolicy.setHeightForWidth(control_Backspace->sizePolicy().hasHeightForWidth());
-        control_Backspace->setSizePolicy(sizePolicy);
-        control_Backspace->setMinimumSize(QSize(75, 32));
-        control_Backspace->setFont(font1);
-        control_Backspace->setFocusPolicy(Qt::NoFocus);
-        control_Backspace->setAutoDefault(false);
+        symbol_MinusUnderscore = new QPushButton(page);
+        symbol_MinusUnderscore->setObjectName(QStringLiteral("symbol_MinusUnderscore"));
+        sizePolicy.setHeightForWidth(symbol_MinusUnderscore->sizePolicy().hasHeightForWidth());
+        symbol_MinusUnderscore->setSizePolicy(sizePolicy);
+        symbol_MinusUnderscore->setMinimumSize(QSize(36, 32));
+        symbol_MinusUnderscore->setFont(font1);
+        symbol_MinusUnderscore->setFocusPolicy(Qt::NoFocus);
+        symbol_MinusUnderscore->setStyleSheet(QLatin1String("QPushButton\n"
+"{\n"
+"	text-align: center;\n"
+"}"));
+        symbol_MinusUnderscore->setAutoDefault(false);
 
-        keyboardPanel->addWidget(control_Backspace, 0, 37, 1, 3);
+        keyboardPanel->addWidget(symbol_MinusUnderscore, 0, 31, 1, 3);
 
         control_Tab = new QPushButton(page);
         control_Tab->setObjectName(QStringLiteral("control_Tab"));
@@ -445,6 +563,17 @@ public:
 
         keyboardPanel->addWidget(letter_R, 1, 11, 1, 3);
 
+        letter_U = new QPushButton(page);
+        letter_U->setObjectName(QStringLiteral("letter_U"));
+        sizePolicy.setHeightForWidth(letter_U->sizePolicy().hasHeightForWidth());
+        letter_U->setSizePolicy(sizePolicy);
+        letter_U->setMinimumSize(QSize(36, 32));
+        letter_U->setFont(font1);
+        letter_U->setFocusPolicy(Qt::NoFocus);
+        letter_U->setAutoDefault(false);
+
+        keyboardPanel->addWidget(letter_U, 1, 20, 1, 3);
+
         letter_T = new QPushButton(page);
         letter_T->setObjectName(QStringLiteral("letter_T"));
         sizePolicy.setHeightForWidth(letter_T->sizePolicy().hasHeightForWidth());
@@ -467,17 +596,6 @@ public:
 
         keyboardPanel->addWidget(letter_Y, 1, 17, 1, 3);
 
-        letter_U = new QPushButton(page);
-        letter_U->setObjectName(QStringLiteral("letter_U"));
-        sizePolicy.setHeightForWidth(letter_U->sizePolicy().hasHeightForWidth());
-        letter_U->setSizePolicy(sizePolicy);
-        letter_U->setMinimumSize(QSize(36, 32));
-        letter_U->setFont(font1);
-        letter_U->setFocusPolicy(Qt::NoFocus);
-        letter_U->setAutoDefault(false);
-
-        keyboardPanel->addWidget(letter_U, 1, 20, 1, 3);
-
         letter_I = new QPushButton(page);
         letter_I->setObjectName(QStringLiteral("letter_I"));
         sizePolicy.setHeightForWidth(letter_I->sizePolicy().hasHeightForWidth());
@@ -499,158 +617,6 @@ public:
         letter_O->setAutoDefault(false);
 
         keyboardPanel->addWidget(letter_O, 1, 26, 1, 3);
-
-        letter_P = new QPushButton(page);
-        letter_P->setObjectName(QStringLiteral("letter_P"));
-        sizePolicy.setHeightForWidth(letter_P->sizePolicy().hasHeightForWidth());
-        letter_P->setSizePolicy(sizePolicy);
-        letter_P->setMinimumSize(QSize(36, 32));
-        letter_P->setFont(font1);
-        letter_P->setFocusPolicy(Qt::NoFocus);
-        letter_P->setAutoDefault(false);
-
-        keyboardPanel->addWidget(letter_P, 1, 29, 1, 3);
-
-        symbol_BraceLeftBracketLeft = new QPushButton(page);
-        symbol_BraceLeftBracketLeft->setObjectName(QStringLiteral("symbol_BraceLeftBracketLeft"));
-        sizePolicy.setHeightForWidth(symbol_BraceLeftBracketLeft->sizePolicy().hasHeightForWidth());
-        symbol_BraceLeftBracketLeft->setSizePolicy(sizePolicy);
-        symbol_BraceLeftBracketLeft->setMinimumSize(QSize(36, 32));
-        symbol_BraceLeftBracketLeft->setFont(font1);
-        symbol_BraceLeftBracketLeft->setFocusPolicy(Qt::NoFocus);
-        symbol_BraceLeftBracketLeft->setStyleSheet(QLatin1String("QPushButton\n"
-"{\n"
-"	text-align: center;\n"
-"}"));
-        symbol_BraceLeftBracketLeft->setAutoDefault(false);
-
-        keyboardPanel->addWidget(symbol_BraceLeftBracketLeft, 1, 32, 1, 3);
-
-        symbol_BarBackslash = new QPushButton(page);
-        symbol_BarBackslash->setObjectName(QStringLiteral("symbol_BarBackslash"));
-        sizePolicy.setHeightForWidth(symbol_BarBackslash->sizePolicy().hasHeightForWidth());
-        symbol_BarBackslash->setSizePolicy(sizePolicy);
-        symbol_BarBackslash->setMinimumSize(QSize(50, 32));
-        symbol_BarBackslash->setFont(font1);
-        symbol_BarBackslash->setFocusPolicy(Qt::NoFocus);
-        symbol_BarBackslash->setStyleSheet(QLatin1String("QPushButton\n"
-"{\n"
-"	text-align: center;\n"
-"}"));
-        symbol_BarBackslash->setAutoDefault(false);
-
-        keyboardPanel->addWidget(symbol_BarBackslash, 1, 38, 1, 2);
-
-        control_CapsLock = new QPushButton(page);
-        control_CapsLock->setObjectName(QStringLiteral("control_CapsLock"));
-        sizePolicy.setHeightForWidth(control_CapsLock->sizePolicy().hasHeightForWidth());
-        control_CapsLock->setSizePolicy(sizePolicy);
-        control_CapsLock->setMinimumSize(QSize(75, 32));
-        control_CapsLock->setFont(font1);
-        control_CapsLock->setFocusPolicy(Qt::NoFocus);
-        control_CapsLock->setCheckable(true);
-        control_CapsLock->setAutoDefault(false);
-
-        keyboardPanel->addWidget(control_CapsLock, 2, 0, 1, 3);
-
-        letter_A = new QPushButton(page);
-        letter_A->setObjectName(QStringLiteral("letter_A"));
-        sizePolicy.setHeightForWidth(letter_A->sizePolicy().hasHeightForWidth());
-        letter_A->setSizePolicy(sizePolicy);
-        letter_A->setMinimumSize(QSize(36, 32));
-        letter_A->setFont(font1);
-        letter_A->setFocusPolicy(Qt::NoFocus);
-        letter_A->setAutoDefault(false);
-
-        keyboardPanel->addWidget(letter_A, 2, 3, 1, 3);
-
-        letter_S = new QPushButton(page);
-        letter_S->setObjectName(QStringLiteral("letter_S"));
-        sizePolicy.setHeightForWidth(letter_S->sizePolicy().hasHeightForWidth());
-        letter_S->setSizePolicy(sizePolicy);
-        letter_S->setMinimumSize(QSize(36, 32));
-        letter_S->setFont(font1);
-        letter_S->setFocusPolicy(Qt::NoFocus);
-        letter_S->setAutoDefault(false);
-
-        keyboardPanel->addWidget(letter_S, 2, 6, 1, 3);
-
-        letter_D = new QPushButton(page);
-        letter_D->setObjectName(QStringLiteral("letter_D"));
-        sizePolicy.setHeightForWidth(letter_D->sizePolicy().hasHeightForWidth());
-        letter_D->setSizePolicy(sizePolicy);
-        letter_D->setMinimumSize(QSize(36, 32));
-        letter_D->setFont(font1);
-        letter_D->setFocusPolicy(Qt::NoFocus);
-        letter_D->setAutoDefault(false);
-
-        keyboardPanel->addWidget(letter_D, 2, 9, 1, 3);
-
-        letter_F = new QPushButton(page);
-        letter_F->setObjectName(QStringLiteral("letter_F"));
-        sizePolicy.setHeightForWidth(letter_F->sizePolicy().hasHeightForWidth());
-        letter_F->setSizePolicy(sizePolicy);
-        letter_F->setMinimumSize(QSize(36, 32));
-        letter_F->setFont(font1);
-        letter_F->setFocusPolicy(Qt::NoFocus);
-        letter_F->setAutoDefault(false);
-
-        keyboardPanel->addWidget(letter_F, 2, 12, 1, 3);
-
-        letter_G = new QPushButton(page);
-        letter_G->setObjectName(QStringLiteral("letter_G"));
-        sizePolicy.setHeightForWidth(letter_G->sizePolicy().hasHeightForWidth());
-        letter_G->setSizePolicy(sizePolicy);
-        letter_G->setMinimumSize(QSize(36, 32));
-        letter_G->setFont(font1);
-        letter_G->setFocusPolicy(Qt::NoFocus);
-        letter_G->setAutoDefault(false);
-
-        keyboardPanel->addWidget(letter_G, 2, 15, 1, 3);
-
-        letter_H = new QPushButton(page);
-        letter_H->setObjectName(QStringLiteral("letter_H"));
-        sizePolicy.setHeightForWidth(letter_H->sizePolicy().hasHeightForWidth());
-        letter_H->setSizePolicy(sizePolicy);
-        letter_H->setMinimumSize(QSize(36, 32));
-        letter_H->setFont(font1);
-        letter_H->setFocusPolicy(Qt::NoFocus);
-        letter_H->setAutoDefault(false);
-
-        keyboardPanel->addWidget(letter_H, 2, 18, 1, 3);
-
-        letter_J = new QPushButton(page);
-        letter_J->setObjectName(QStringLiteral("letter_J"));
-        sizePolicy.setHeightForWidth(letter_J->sizePolicy().hasHeightForWidth());
-        letter_J->setSizePolicy(sizePolicy);
-        letter_J->setMinimumSize(QSize(36, 32));
-        letter_J->setFont(font1);
-        letter_J->setFocusPolicy(Qt::NoFocus);
-        letter_J->setAutoDefault(false);
-
-        keyboardPanel->addWidget(letter_J, 2, 21, 1, 3);
-
-        letter_K = new QPushButton(page);
-        letter_K->setObjectName(QStringLiteral("letter_K"));
-        sizePolicy.setHeightForWidth(letter_K->sizePolicy().hasHeightForWidth());
-        letter_K->setSizePolicy(sizePolicy);
-        letter_K->setMinimumSize(QSize(36, 32));
-        letter_K->setFont(font1);
-        letter_K->setFocusPolicy(Qt::NoFocus);
-        letter_K->setAutoDefault(false);
-
-        keyboardPanel->addWidget(letter_K, 2, 24, 1, 3);
-
-        letter_L = new QPushButton(page);
-        letter_L->setObjectName(QStringLiteral("letter_L"));
-        sizePolicy.setHeightForWidth(letter_L->sizePolicy().hasHeightForWidth());
-        letter_L->setSizePolicy(sizePolicy);
-        letter_L->setMinimumSize(QSize(36, 32));
-        letter_L->setFont(font1);
-        letter_L->setFocusPolicy(Qt::NoFocus);
-        letter_L->setAutoDefault(false);
-
-        keyboardPanel->addWidget(letter_L, 2, 27, 1, 3);
 
         symbol_ColonSemicolon = new QPushButton(page);
         symbol_ColonSemicolon->setObjectName(QStringLiteral("symbol_ColonSemicolon"));
@@ -682,16 +648,27 @@ public:
 
         keyboardPanel->addWidget(symbol_QuoteDblApostrophe, 2, 33, 1, 3);
 
-        control_Enter = new QPushButton(page);
-        control_Enter->setObjectName(QStringLiteral("control_Enter"));
-        sizePolicy.setHeightForWidth(control_Enter->sizePolicy().hasHeightForWidth());
-        control_Enter->setSizePolicy(sizePolicy);
-        control_Enter->setMinimumSize(QSize(80, 32));
-        control_Enter->setFont(font1);
-        control_Enter->setFocusPolicy(Qt::NoFocus);
-        control_Enter->setAutoDefault(false);
+        letter_L = new QPushButton(page);
+        letter_L->setObjectName(QStringLiteral("letter_L"));
+        sizePolicy.setHeightForWidth(letter_L->sizePolicy().hasHeightForWidth());
+        letter_L->setSizePolicy(sizePolicy);
+        letter_L->setMinimumSize(QSize(36, 32));
+        letter_L->setFont(font1);
+        letter_L->setFocusPolicy(Qt::NoFocus);
+        letter_L->setAutoDefault(false);
 
-        keyboardPanel->addWidget(control_Enter, 2, 36, 1, 4);
+        keyboardPanel->addWidget(letter_L, 2, 27, 1, 3);
+
+        letter_K = new QPushButton(page);
+        letter_K->setObjectName(QStringLiteral("letter_K"));
+        sizePolicy.setHeightForWidth(letter_K->sizePolicy().hasHeightForWidth());
+        letter_K->setSizePolicy(sizePolicy);
+        letter_K->setMinimumSize(QSize(36, 32));
+        letter_K->setFont(font1);
+        letter_K->setFocusPolicy(Qt::NoFocus);
+        letter_K->setAutoDefault(false);
+
+        keyboardPanel->addWidget(letter_K, 2, 24, 1, 3);
 
         control_LeftShift = new QPushButton(page);
         control_LeftShift->setObjectName(QStringLiteral("control_LeftShift"));
@@ -716,6 +693,17 @@ public:
         letter_Z->setAutoDefault(false);
 
         keyboardPanel->addWidget(letter_Z, 3, 4, 1, 3);
+
+        control_Enter = new QPushButton(page);
+        control_Enter->setObjectName(QStringLiteral("control_Enter"));
+        sizePolicy.setHeightForWidth(control_Enter->sizePolicy().hasHeightForWidth());
+        control_Enter->setSizePolicy(sizePolicy);
+        control_Enter->setMinimumSize(QSize(80, 32));
+        control_Enter->setFont(font1);
+        control_Enter->setFocusPolicy(Qt::NoFocus);
+        control_Enter->setAutoDefault(false);
+
+        keyboardPanel->addWidget(control_Enter, 2, 36, 1, 4);
 
         letter_X = new QPushButton(page);
         letter_X->setObjectName(QStringLiteral("letter_X"));
@@ -772,17 +760,6 @@ public:
 
         keyboardPanel->addWidget(letter_N, 3, 19, 1, 3);
 
-        letter_M = new QPushButton(page);
-        letter_M->setObjectName(QStringLiteral("letter_M"));
-        sizePolicy.setHeightForWidth(letter_M->sizePolicy().hasHeightForWidth());
-        letter_M->setSizePolicy(sizePolicy);
-        letter_M->setMinimumSize(QSize(36, 32));
-        letter_M->setFont(font1);
-        letter_M->setFocusPolicy(Qt::NoFocus);
-        letter_M->setAutoDefault(false);
-
-        keyboardPanel->addWidget(letter_M, 3, 22, 1, 3);
-
         symbol_LessComma = new QPushButton(page);
         symbol_LessComma->setObjectName(QStringLiteral("symbol_LessComma"));
         sizePolicy.setHeightForWidth(symbol_LessComma->sizePolicy().hasHeightForWidth());
@@ -798,6 +775,17 @@ public:
 
         keyboardPanel->addWidget(symbol_LessComma, 3, 25, 1, 3);
 
+        letter_M = new QPushButton(page);
+        letter_M->setObjectName(QStringLiteral("letter_M"));
+        sizePolicy.setHeightForWidth(letter_M->sizePolicy().hasHeightForWidth());
+        letter_M->setSizePolicy(sizePolicy);
+        letter_M->setMinimumSize(QSize(36, 32));
+        letter_M->setFont(font1);
+        letter_M->setFocusPolicy(Qt::NoFocus);
+        letter_M->setAutoDefault(false);
+
+        keyboardPanel->addWidget(letter_M, 3, 22, 1, 3);
+
         symbol_GreaterPeriod = new QPushButton(page);
         symbol_GreaterPeriod->setObjectName(QStringLiteral("symbol_GreaterPeriod"));
         sizePolicy.setHeightForWidth(symbol_GreaterPeriod->sizePolicy().hasHeightForWidth());
@@ -812,6 +800,17 @@ public:
         symbol_GreaterPeriod->setAutoDefault(false);
 
         keyboardPanel->addWidget(symbol_GreaterPeriod, 3, 28, 1, 3);
+
+        control_ArrowUp = new QPushButton(page);
+        control_ArrowUp->setObjectName(QStringLiteral("control_ArrowUp"));
+        sizePolicy.setHeightForWidth(control_ArrowUp->sizePolicy().hasHeightForWidth());
+        control_ArrowUp->setSizePolicy(sizePolicy);
+        control_ArrowUp->setMinimumSize(QSize(36, 32));
+        control_ArrowUp->setFont(font1);
+        control_ArrowUp->setFocusPolicy(Qt::NoFocus);
+        control_ArrowUp->setAutoDefault(false);
+
+        keyboardPanel->addWidget(control_ArrowUp, 3, 37, 1, 2);
 
         symbol_QuestionSlash = new QPushButton(page);
         symbol_QuestionSlash->setObjectName(QStringLiteral("symbol_QuestionSlash"));
@@ -839,28 +838,6 @@ public:
 
         keyboardPanel->addWidget(control_PageUp, 3, 34, 1, 3);
 
-        control_ArrowUp = new QPushButton(page);
-        control_ArrowUp->setObjectName(QStringLiteral("control_ArrowUp"));
-        sizePolicy.setHeightForWidth(control_ArrowUp->sizePolicy().hasHeightForWidth());
-        control_ArrowUp->setSizePolicy(sizePolicy);
-        control_ArrowUp->setMinimumSize(QSize(36, 32));
-        control_ArrowUp->setFont(font1);
-        control_ArrowUp->setFocusPolicy(Qt::NoFocus);
-        control_ArrowUp->setAutoDefault(false);
-
-        keyboardPanel->addWidget(control_ArrowUp, 3, 37, 1, 2);
-
-        control_PageDown = new QPushButton(page);
-        control_PageDown->setObjectName(QStringLiteral("control_PageDown"));
-        sizePolicy.setHeightForWidth(control_PageDown->sizePolicy().hasHeightForWidth());
-        control_PageDown->setSizePolicy(sizePolicy);
-        control_PageDown->setMinimumSize(QSize(50, 32));
-        control_PageDown->setFont(font1);
-        control_PageDown->setFocusPolicy(Qt::NoFocus);
-        control_PageDown->setAutoDefault(false);
-
-        keyboardPanel->addWidget(control_PageDown, 3, 39, 1, 1);
-
         control_LeftCtrl = new QPushButton(page);
         control_LeftCtrl->setObjectName(QStringLiteral("control_LeftCtrl"));
         sizePolicy.setHeightForWidth(control_LeftCtrl->sizePolicy().hasHeightForWidth());
@@ -886,6 +863,39 @@ public:
 
         keyboardPanel->addWidget(control_Language, 4, 2, 1, 5);
 
+        control_PageDown = new QPushButton(page);
+        control_PageDown->setObjectName(QStringLiteral("control_PageDown"));
+        sizePolicy.setHeightForWidth(control_PageDown->sizePolicy().hasHeightForWidth());
+        control_PageDown->setSizePolicy(sizePolicy);
+        control_PageDown->setMinimumSize(QSize(50, 32));
+        control_PageDown->setFont(font1);
+        control_PageDown->setFocusPolicy(Qt::NoFocus);
+        control_PageDown->setAutoDefault(false);
+
+        keyboardPanel->addWidget(control_PageDown, 3, 39, 1, 1);
+
+        control_ArrowDown = new QPushButton(page);
+        control_ArrowDown->setObjectName(QStringLiteral("control_ArrowDown"));
+        sizePolicy.setHeightForWidth(control_ArrowDown->sizePolicy().hasHeightForWidth());
+        control_ArrowDown->setSizePolicy(sizePolicy);
+        control_ArrowDown->setMinimumSize(QSize(36, 32));
+        control_ArrowDown->setFont(font1);
+        control_ArrowDown->setFocusPolicy(Qt::NoFocus);
+        control_ArrowDown->setAutoDefault(false);
+
+        keyboardPanel->addWidget(control_ArrowDown, 4, 37, 1, 2);
+
+        control_ArrowLeft = new QPushButton(page);
+        control_ArrowLeft->setObjectName(QStringLiteral("control_ArrowLeft"));
+        sizePolicy.setHeightForWidth(control_ArrowLeft->sizePolicy().hasHeightForWidth());
+        control_ArrowLeft->setSizePolicy(sizePolicy);
+        control_ArrowLeft->setMinimumSize(QSize(36, 32));
+        control_ArrowLeft->setFont(font1);
+        control_ArrowLeft->setFocusPolicy(Qt::NoFocus);
+        control_ArrowLeft->setAutoDefault(false);
+
+        keyboardPanel->addWidget(control_ArrowLeft, 4, 34, 1, 3);
+
         control_LeftAlt = new QPushButton(page);
         control_LeftAlt->setObjectName(QStringLiteral("control_LeftAlt"));
         sizePolicy.setHeightForWidth(control_LeftAlt->sizePolicy().hasHeightForWidth());
@@ -908,39 +918,6 @@ public:
 
         keyboardPanel->addWidget(control_Space, 4, 11, 1, 23);
 
-        control_ArrowLeft = new QPushButton(page);
-        control_ArrowLeft->setObjectName(QStringLiteral("control_ArrowLeft"));
-        sizePolicy.setHeightForWidth(control_ArrowLeft->sizePolicy().hasHeightForWidth());
-        control_ArrowLeft->setSizePolicy(sizePolicy);
-        control_ArrowLeft->setMinimumSize(QSize(36, 32));
-        control_ArrowLeft->setFont(font1);
-        control_ArrowLeft->setFocusPolicy(Qt::NoFocus);
-        control_ArrowLeft->setAutoDefault(false);
-
-        keyboardPanel->addWidget(control_ArrowLeft, 4, 34, 1, 3);
-
-        control_ArrowDown = new QPushButton(page);
-        control_ArrowDown->setObjectName(QStringLiteral("control_ArrowDown"));
-        sizePolicy.setHeightForWidth(control_ArrowDown->sizePolicy().hasHeightForWidth());
-        control_ArrowDown->setSizePolicy(sizePolicy);
-        control_ArrowDown->setMinimumSize(QSize(36, 32));
-        control_ArrowDown->setFont(font1);
-        control_ArrowDown->setFocusPolicy(Qt::NoFocus);
-        control_ArrowDown->setAutoDefault(false);
-
-        keyboardPanel->addWidget(control_ArrowDown, 4, 37, 1, 2);
-
-        control_ArrowRight = new QPushButton(page);
-        control_ArrowRight->setObjectName(QStringLiteral("control_ArrowRight"));
-        sizePolicy.setHeightForWidth(control_ArrowRight->sizePolicy().hasHeightForWidth());
-        control_ArrowRight->setSizePolicy(sizePolicy);
-        control_ArrowRight->setMinimumSize(QSize(36, 32));
-        control_ArrowRight->setFont(font1);
-        control_ArrowRight->setFocusPolicy(Qt::NoFocus);
-        control_ArrowRight->setAutoDefault(false);
-
-        keyboardPanel->addWidget(control_ArrowRight, 4, 39, 1, 1);
-
         symbol_BraceRightBracketRight = new QPushButton(page);
         symbol_BraceRightBracketRight->setObjectName(QStringLiteral("symbol_BraceRightBracketRight"));
         sizePolicy.setHeightForWidth(symbol_BraceRightBracketRight->sizePolicy().hasHeightForWidth());
@@ -955,6 +932,39 @@ public:
         symbol_BraceRightBracketRight->setAutoDefault(false);
 
         keyboardPanel->addWidget(symbol_BraceRightBracketRight, 1, 35, 1, 3);
+
+        control_ArrowRight = new QPushButton(page);
+        control_ArrowRight->setObjectName(QStringLiteral("control_ArrowRight"));
+        sizePolicy.setHeightForWidth(control_ArrowRight->sizePolicy().hasHeightForWidth());
+        control_ArrowRight->setSizePolicy(sizePolicy);
+        control_ArrowRight->setMinimumSize(QSize(36, 32));
+        control_ArrowRight->setFont(font1);
+        control_ArrowRight->setFocusPolicy(Qt::NoFocus);
+        control_ArrowRight->setAutoDefault(false);
+
+        keyboardPanel->addWidget(control_ArrowRight, 4, 39, 1, 1);
+
+        control_Backspace = new QPushButton(page);
+        control_Backspace->setObjectName(QStringLiteral("control_Backspace"));
+        sizePolicy.setHeightForWidth(control_Backspace->sizePolicy().hasHeightForWidth());
+        control_Backspace->setSizePolicy(sizePolicy);
+        control_Backspace->setMinimumSize(QSize(75, 32));
+        control_Backspace->setFont(font1);
+        control_Backspace->setFocusPolicy(Qt::NoFocus);
+        control_Backspace->setAutoDefault(false);
+
+        keyboardPanel->addWidget(control_Backspace, 0, 37, 1, 2);
+
+        control_Disable = new QPushButton(page);
+        control_Disable->setObjectName(QStringLiteral("control_Disable"));
+        sizePolicy.setHeightForWidth(control_Disable->sizePolicy().hasHeightForWidth());
+        control_Disable->setSizePolicy(sizePolicy);
+        control_Disable->setMinimumSize(QSize(75, 32));
+        control_Disable->setFont(font1);
+        control_Disable->setFocusPolicy(Qt::NoFocus);
+        control_Disable->setAutoDefault(false);
+
+        keyboardPanel->addWidget(control_Disable, 0, 39, 1, 1);
 
 
         gridLayout_2->addLayout(keyboardPanel, 0, 0, 1, 9);
@@ -1044,10 +1054,10 @@ public:
         page_num = new QWidget();
         page_num->setObjectName(QStringLiteral("page_num"));
         gridLayout_3 = new QGridLayout(page_num);
-        gridLayout_3->setSpacing(3);
+        gridLayout_3->setSpacing(6);
         gridLayout_3->setContentsMargins(11, 11, 11, 11);
         gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
-        gridLayout_3->setContentsMargins(1, 1, 1, 9);
+        gridLayout_3->setContentsMargins(-1, 20, -1, 20);
         keyboardPanel_number = new QGridLayout();
         keyboardPanel_number->setSpacing(2);
         keyboardPanel_number->setObjectName(QStringLiteral("keyboardPanel_number"));
@@ -1055,7 +1065,6 @@ public:
         control_Enter_num->setObjectName(QStringLiteral("control_Enter_num"));
         sizePolicy.setHeightForWidth(control_Enter_num->sizePolicy().hasHeightForWidth());
         control_Enter_num->setSizePolicy(sizePolicy);
-        control_Enter_num->setMinimumSize(QSize(80, 32));
         QFont font2;
         font2.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
         font2.setBold(false);
@@ -1070,7 +1079,7 @@ public:
 "}"));
         control_Enter_num->setAutoDefault(false);
 
-        keyboardPanel_number->addWidget(control_Enter_num, 3, 3, 2, 1);
+        keyboardPanel_number->addWidget(control_Enter_num, 5, 3, 2, 1);
 
         number_D3 = new QPushButton(page_num);
         number_D3->setObjectName(QStringLiteral("number_D3"));
@@ -1086,7 +1095,7 @@ public:
 "}"));
         number_D3->setAutoDefault(false);
 
-        keyboardPanel_number->addWidget(number_D3, 2, 3, 1, 1);
+        keyboardPanel_number->addWidget(number_D3, 3, 3, 1, 1);
 
         number_D6 = new QPushButton(page_num);
         number_D6->setObjectName(QStringLiteral("number_D6"));
@@ -1102,7 +1111,7 @@ public:
 "}"));
         number_D6->setAutoDefault(false);
 
-        keyboardPanel_number->addWidget(number_D6, 1, 3, 1, 1);
+        keyboardPanel_number->addWidget(number_D6, 2, 3, 1, 1);
 
         number_D7 = new QPushButton(page_num);
         number_D7->setObjectName(QStringLiteral("number_D7"));
@@ -1121,6 +1130,22 @@ public:
 
         keyboardPanel_number->addWidget(number_D7, 0, 0, 1, 1);
 
+        number_D4 = new QPushButton(page_num);
+        number_D4->setObjectName(QStringLiteral("number_D4"));
+        sizePolicy.setHeightForWidth(number_D4->sizePolicy().hasHeightForWidth());
+        number_D4->setSizePolicy(sizePolicy);
+        number_D4->setMinimumSize(QSize(36, 32));
+        number_D4->setFont(font2);
+        number_D4->setFocusPolicy(Qt::NoFocus);
+        number_D4->setStyleSheet(QLatin1String("QPushButton\n"
+"{\n"
+"	text-align: center;\n"
+"	font:20px\n"
+"}"));
+        number_D4->setAutoDefault(false);
+
+        keyboardPanel_number->addWidget(number_D4, 2, 0, 1, 1);
+
         number_D8 = new QPushButton(page_num);
         number_D8->setObjectName(QStringLiteral("number_D8"));
         sizePolicy.setHeightForWidth(number_D8->sizePolicy().hasHeightForWidth());
@@ -1137,37 +1162,21 @@ public:
 
         keyboardPanel_number->addWidget(number_D8, 0, 2, 1, 1);
 
-        number_D4 = new QPushButton(page_num);
-        number_D4->setObjectName(QStringLiteral("number_D4"));
-        sizePolicy.setHeightForWidth(number_D4->sizePolicy().hasHeightForWidth());
-        number_D4->setSizePolicy(sizePolicy);
-        number_D4->setMinimumSize(QSize(36, 32));
-        number_D4->setFont(font2);
-        number_D4->setFocusPolicy(Qt::NoFocus);
-        number_D4->setStyleSheet(QLatin1String("QPushButton\n"
+        number_D1 = new QPushButton(page_num);
+        number_D1->setObjectName(QStringLiteral("number_D1"));
+        sizePolicy.setHeightForWidth(number_D1->sizePolicy().hasHeightForWidth());
+        number_D1->setSizePolicy(sizePolicy);
+        number_D1->setMinimumSize(QSize(36, 32));
+        number_D1->setFont(font2);
+        number_D1->setFocusPolicy(Qt::NoFocus);
+        number_D1->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	text-align: center;\n"
 "	font:20px\n"
 "}"));
-        number_D4->setAutoDefault(false);
+        number_D1->setAutoDefault(false);
 
-        keyboardPanel_number->addWidget(number_D4, 1, 0, 1, 1);
-
-        number_D5 = new QPushButton(page_num);
-        number_D5->setObjectName(QStringLiteral("number_D5"));
-        sizePolicy.setHeightForWidth(number_D5->sizePolicy().hasHeightForWidth());
-        number_D5->setSizePolicy(sizePolicy);
-        number_D5->setMinimumSize(QSize(36, 32));
-        number_D5->setFont(font2);
-        number_D5->setFocusPolicy(Qt::NoFocus);
-        number_D5->setStyleSheet(QLatin1String("QPushButton\n"
-"{\n"
-"	text-align: center;\n"
-"	font:20px\n"
-"}"));
-        number_D5->setAutoDefault(false);
-
-        keyboardPanel_number->addWidget(number_D5, 1, 2, 1, 1);
+        keyboardPanel_number->addWidget(number_D1, 3, 0, 1, 1);
 
         number_D9 = new QPushButton(page_num);
         number_D9->setObjectName(QStringLiteral("number_D9"));
@@ -1185,6 +1194,22 @@ public:
 
         keyboardPanel_number->addWidget(number_D9, 0, 3, 1, 1);
 
+        number_D5 = new QPushButton(page_num);
+        number_D5->setObjectName(QStringLiteral("number_D5"));
+        sizePolicy.setHeightForWidth(number_D5->sizePolicy().hasHeightForWidth());
+        number_D5->setSizePolicy(sizePolicy);
+        number_D5->setMinimumSize(QSize(36, 32));
+        number_D5->setFont(font2);
+        number_D5->setFocusPolicy(Qt::NoFocus);
+        number_D5->setStyleSheet(QLatin1String("QPushButton\n"
+"{\n"
+"	text-align: center;\n"
+"	font:20px\n"
+"}"));
+        number_D5->setAutoDefault(false);
+
+        keyboardPanel_number->addWidget(number_D5, 2, 2, 1, 1);
+
         number_D0 = new QPushButton(page_num);
         number_D0->setObjectName(QStringLiteral("number_D0"));
         sizePolicy.setHeightForWidth(number_D0->sizePolicy().hasHeightForWidth());
@@ -1199,23 +1224,7 @@ public:
 "}"));
         number_D0->setAutoDefault(false);
 
-        keyboardPanel_number->addWidget(number_D0, 3, 0, 1, 1);
-
-        number_D1 = new QPushButton(page_num);
-        number_D1->setObjectName(QStringLiteral("number_D1"));
-        sizePolicy.setHeightForWidth(number_D1->sizePolicy().hasHeightForWidth());
-        number_D1->setSizePolicy(sizePolicy);
-        number_D1->setMinimumSize(QSize(36, 32));
-        number_D1->setFont(font2);
-        number_D1->setFocusPolicy(Qt::NoFocus);
-        number_D1->setStyleSheet(QLatin1String("QPushButton\n"
-"{\n"
-"	text-align: center;\n"
-"	font:20px\n"
-"}"));
-        number_D1->setAutoDefault(false);
-
-        keyboardPanel_number->addWidget(number_D1, 2, 0, 1, 1);
+        keyboardPanel_number->addWidget(number_D0, 5, 0, 1, 1);
 
         number_D2 = new QPushButton(page_num);
         number_D2->setObjectName(QStringLiteral("number_D2"));
@@ -1231,7 +1240,7 @@ public:
 "}"));
         number_D2->setAutoDefault(false);
 
-        keyboardPanel_number->addWidget(number_D2, 2, 2, 1, 1);
+        keyboardPanel_number->addWidget(number_D2, 3, 2, 1, 1);
 
         symbol_GreaterPeriod_num = new QPushButton(page_num);
         symbol_GreaterPeriod_num->setObjectName(QStringLiteral("symbol_GreaterPeriod_num"));
@@ -1247,7 +1256,7 @@ public:
 "}"));
         symbol_GreaterPeriod_num->setAutoDefault(false);
 
-        keyboardPanel_number->addWidget(symbol_GreaterPeriod_num, 4, 0, 1, 1);
+        keyboardPanel_number->addWidget(symbol_GreaterPeriod_num, 6, 0, 1, 1);
 
         control_Backspace_num = new QPushButton(page_num);
         control_Backspace_num->setObjectName(QStringLiteral("control_Backspace_num"));
@@ -1264,19 +1273,19 @@ public:
 "}"));
         control_Backspace_num->setAutoDefault(false);
 
-        keyboardPanel_number->addWidget(control_Backspace_num, 3, 2, 2, 1);
+        keyboardPanel_number->addWidget(control_Backspace_num, 5, 2, 2, 1);
 
 
-        gridLayout_3->addLayout(keyboardPanel_number, 0, 0, 1, 2);
+        gridLayout_3->addLayout(keyboardPanel_number, 0, 0, 1, 1);
 
         stackedWidget->addWidget(page_num);
 
-        gridLayout->addWidget(stackedWidget, 3, 0, 1, 1);
+        gridLayout->addWidget(stackedWidget, 0, 0, 1, 1);
 
 
         retranslateUi(SoftKeyboard);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(SoftKeyboard);
@@ -1285,6 +1294,52 @@ public:
     void retranslateUi(QDialog *SoftKeyboard)
     {
         SoftKeyboard->setWindowTitle(QApplication::translate("SoftKeyboard", "Vazyme KEY", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        symbol_BarBackslash->setWhatsThis(QApplication::translate("SoftKeyboard", "27", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        symbol_BarBackslash->setText(QApplication::translate("SoftKeyboard", " |\n"
+" \\", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        control_CapsLock->setWhatsThis(QApplication::translate("SoftKeyboard", "28", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        control_CapsLock->setText(QApplication::translate("SoftKeyboard", "CapsLock", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        symbol_BraceLeftBracketLeft->setWhatsThis(QApplication::translate("SoftKeyboard", "25", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        symbol_BraceLeftBracketLeft->setText(QApplication::translate("SoftKeyboard", " {\n"
+" [", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        letter_P->setWhatsThis(QApplication::translate("SoftKeyboard", "24", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        letter_P->setText(QApplication::translate("SoftKeyboard", "p", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        letter_D->setWhatsThis(QApplication::translate("SoftKeyboard", "31", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        letter_D->setText(QApplication::translate("SoftKeyboard", "d", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        letter_S->setWhatsThis(QApplication::translate("SoftKeyboard", "30", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        letter_S->setText(QApplication::translate("SoftKeyboard", "s", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        letter_A->setWhatsThis(QApplication::translate("SoftKeyboard", "29", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        letter_A->setText(QApplication::translate("SoftKeyboard", "a", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        letter_F->setWhatsThis(QApplication::translate("SoftKeyboard", "32", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        letter_F->setText(QApplication::translate("SoftKeyboard", "f", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        letter_J->setWhatsThis(QApplication::translate("SoftKeyboard", "35", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        letter_J->setText(QApplication::translate("SoftKeyboard", "j", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        letter_G->setWhatsThis(QApplication::translate("SoftKeyboard", "33", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        letter_G->setText(QApplication::translate("SoftKeyboard", "g", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        letter_H->setWhatsThis(QApplication::translate("SoftKeyboard", "34", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        letter_H->setText(QApplication::translate("SoftKeyboard", "h", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         symbol_AsciiTildeQuote->setWhatsThis(QApplication::translate("SoftKeyboard", "0", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
@@ -1301,16 +1356,6 @@ public:
         number_2->setText(QApplication::translate("SoftKeyboard", " @\n"
 " 2", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        number_3->setWhatsThis(QApplication::translate("SoftKeyboard", "3", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        number_3->setText(QApplication::translate("SoftKeyboard", " #\n"
-" 3", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        number_4->setWhatsThis(QApplication::translate("SoftKeyboard", "4", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        number_4->setText(QApplication::translate("SoftKeyboard", " $\n"
-" 4", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
         number_5->setWhatsThis(QApplication::translate("SoftKeyboard", "5", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         number_5->setText(QApplication::translate("SoftKeyboard", " %\n"
@@ -1321,39 +1366,45 @@ public:
         number_6->setText(QApplication::translate("SoftKeyboard", " ^\n"
 " 6", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        number_7->setWhatsThis(QApplication::translate("SoftKeyboard", "7", Q_NULLPTR));
+        number_4->setWhatsThis(QApplication::translate("SoftKeyboard", "4", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
-        number_7->setText(QApplication::translate("SoftKeyboard", "&&\n"
-" 7", Q_NULLPTR));
+        number_4->setText(QApplication::translate("SoftKeyboard", " $\n"
+" 4", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        number_3->setWhatsThis(QApplication::translate("SoftKeyboard", "3", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        number_3->setText(QApplication::translate("SoftKeyboard", " #\n"
+" 3", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         number_8->setWhatsThis(QApplication::translate("SoftKeyboard", "8", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         number_8->setText(QApplication::translate("SoftKeyboard", " *\n"
 " 8", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        number_9->setWhatsThis(QApplication::translate("SoftKeyboard", "9", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        number_9->setText(QApplication::translate("SoftKeyboard", " (\n"
-" 9", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
         number_0->setWhatsThis(QApplication::translate("SoftKeyboard", "10", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         number_0->setText(QApplication::translate("SoftKeyboard", " )\n"
 " 0", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        symbol_MinusUnderscore->setWhatsThis(QApplication::translate("SoftKeyboard", "11", Q_NULLPTR));
+        number_9->setWhatsThis(QApplication::translate("SoftKeyboard", "9", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
-        symbol_MinusUnderscore->setText(QApplication::translate("SoftKeyboard", " _\n"
-" -", Q_NULLPTR));
+        number_9->setText(QApplication::translate("SoftKeyboard", " (\n"
+" 9", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        number_7->setWhatsThis(QApplication::translate("SoftKeyboard", "7", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        number_7->setText(QApplication::translate("SoftKeyboard", "&&\n"
+" 7", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         symbol_PlusEqual->setWhatsThis(QApplication::translate("SoftKeyboard", "12", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         symbol_PlusEqual->setText(QApplication::translate("SoftKeyboard", " +\n"
 " =", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        control_Backspace->setWhatsThis(QApplication::translate("SoftKeyboard", "13", Q_NULLPTR));
+        symbol_MinusUnderscore->setWhatsThis(QApplication::translate("SoftKeyboard", "11", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
-        control_Backspace->setText(QApplication::translate("SoftKeyboard", "Backspace", Q_NULLPTR));
+        symbol_MinusUnderscore->setText(QApplication::translate("SoftKeyboard", " _\n"
+" -", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         control_Tab->setWhatsThis(QApplication::translate("SoftKeyboard", "14", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
@@ -1375,6 +1426,10 @@ public:
 #endif // QT_NO_WHATSTHIS
         letter_R->setText(QApplication::translate("SoftKeyboard", "r", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
+        letter_U->setWhatsThis(QApplication::translate("SoftKeyboard", "21", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        letter_U->setText(QApplication::translate("SoftKeyboard", "u", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
         letter_T->setWhatsThis(QApplication::translate("SoftKeyboard", "19", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         letter_T->setText(QApplication::translate("SoftKeyboard", "t", Q_NULLPTR));
@@ -1383,10 +1438,6 @@ public:
 #endif // QT_NO_WHATSTHIS
         letter_Y->setText(QApplication::translate("SoftKeyboard", "y", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        letter_U->setWhatsThis(QApplication::translate("SoftKeyboard", "21", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        letter_U->setText(QApplication::translate("SoftKeyboard", "u", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
         letter_I->setWhatsThis(QApplication::translate("SoftKeyboard", "22", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         letter_I->setText(QApplication::translate("SoftKeyboard", "i", Q_NULLPTR));
@@ -1394,60 +1445,6 @@ public:
         letter_O->setWhatsThis(QApplication::translate("SoftKeyboard", "23", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         letter_O->setText(QApplication::translate("SoftKeyboard", "o", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        letter_P->setWhatsThis(QApplication::translate("SoftKeyboard", "24", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        letter_P->setText(QApplication::translate("SoftKeyboard", "p", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        symbol_BraceLeftBracketLeft->setWhatsThis(QApplication::translate("SoftKeyboard", "25", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        symbol_BraceLeftBracketLeft->setText(QApplication::translate("SoftKeyboard", " {\n"
-" [", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        symbol_BarBackslash->setWhatsThis(QApplication::translate("SoftKeyboard", "27", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        symbol_BarBackslash->setText(QApplication::translate("SoftKeyboard", " |\n"
-" \\", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        control_CapsLock->setWhatsThis(QApplication::translate("SoftKeyboard", "28", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        control_CapsLock->setText(QApplication::translate("SoftKeyboard", "CapsLock", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        letter_A->setWhatsThis(QApplication::translate("SoftKeyboard", "29", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        letter_A->setText(QApplication::translate("SoftKeyboard", "a", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        letter_S->setWhatsThis(QApplication::translate("SoftKeyboard", "30", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        letter_S->setText(QApplication::translate("SoftKeyboard", "s", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        letter_D->setWhatsThis(QApplication::translate("SoftKeyboard", "31", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        letter_D->setText(QApplication::translate("SoftKeyboard", "d", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        letter_F->setWhatsThis(QApplication::translate("SoftKeyboard", "32", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        letter_F->setText(QApplication::translate("SoftKeyboard", "f", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        letter_G->setWhatsThis(QApplication::translate("SoftKeyboard", "33", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        letter_G->setText(QApplication::translate("SoftKeyboard", "g", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        letter_H->setWhatsThis(QApplication::translate("SoftKeyboard", "34", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        letter_H->setText(QApplication::translate("SoftKeyboard", "h", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        letter_J->setWhatsThis(QApplication::translate("SoftKeyboard", "35", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        letter_J->setText(QApplication::translate("SoftKeyboard", "j", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        letter_K->setWhatsThis(QApplication::translate("SoftKeyboard", "36", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        letter_K->setText(QApplication::translate("SoftKeyboard", "k", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        letter_L->setWhatsThis(QApplication::translate("SoftKeyboard", "37", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        letter_L->setText(QApplication::translate("SoftKeyboard", "l", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         symbol_ColonSemicolon->setWhatsThis(QApplication::translate("SoftKeyboard", "38", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
@@ -1459,9 +1456,13 @@ public:
         symbol_QuoteDblApostrophe->setText(QApplication::translate("SoftKeyboard", " \"\n"
 " '", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        control_Enter->setWhatsThis(QApplication::translate("SoftKeyboard", "40", Q_NULLPTR));
+        letter_L->setWhatsThis(QApplication::translate("SoftKeyboard", "37", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
-        control_Enter->setText(QApplication::translate("SoftKeyboard", "Enter", Q_NULLPTR));
+        letter_L->setText(QApplication::translate("SoftKeyboard", "l", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        letter_K->setWhatsThis(QApplication::translate("SoftKeyboard", "36", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        letter_K->setText(QApplication::translate("SoftKeyboard", "k", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         control_LeftShift->setWhatsThis(QApplication::translate("SoftKeyboard", "41", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
@@ -1470,6 +1471,10 @@ public:
         letter_Z->setWhatsThis(QApplication::translate("SoftKeyboard", "42", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         letter_Z->setText(QApplication::translate("SoftKeyboard", "z", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        control_Enter->setWhatsThis(QApplication::translate("SoftKeyboard", "40", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        control_Enter->setText(QApplication::translate("SoftKeyboard", "Enter", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         letter_X->setWhatsThis(QApplication::translate("SoftKeyboard", "43", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
@@ -1491,19 +1496,23 @@ public:
 #endif // QT_NO_WHATSTHIS
         letter_N->setText(QApplication::translate("SoftKeyboard", "n", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        letter_M->setWhatsThis(QApplication::translate("SoftKeyboard", "48", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        letter_M->setText(QApplication::translate("SoftKeyboard", "m", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
         symbol_LessComma->setWhatsThis(QApplication::translate("SoftKeyboard", "49", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         symbol_LessComma->setText(QApplication::translate("SoftKeyboard", " <\n"
 " ,", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
+        letter_M->setWhatsThis(QApplication::translate("SoftKeyboard", "48", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        letter_M->setText(QApplication::translate("SoftKeyboard", "m", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
         symbol_GreaterPeriod->setWhatsThis(QApplication::translate("SoftKeyboard", "50", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         symbol_GreaterPeriod->setText(QApplication::translate("SoftKeyboard", " >\n"
 " .", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        control_ArrowUp->setWhatsThis(QApplication::translate("SoftKeyboard", "53", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        control_ArrowUp->setText(QApplication::translate("SoftKeyboard", "\342\206\221", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         symbol_QuestionSlash->setWhatsThis(QApplication::translate("SoftKeyboard", "51", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
@@ -1514,14 +1523,6 @@ public:
 #endif // QT_NO_WHATSTHIS
         control_PageUp->setText(QApplication::translate("SoftKeyboard", "PgUp", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        control_ArrowUp->setWhatsThis(QApplication::translate("SoftKeyboard", "53", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        control_ArrowUp->setText(QApplication::translate("SoftKeyboard", "\342\206\221", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        control_PageDown->setWhatsThis(QApplication::translate("SoftKeyboard", "54", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        control_PageDown->setText(QApplication::translate("SoftKeyboard", "PgDn", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
         control_LeftCtrl->setWhatsThis(QApplication::translate("SoftKeyboard", "55", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         control_LeftCtrl->setText(QApplication::translate("SoftKeyboard", "Ctrl", Q_NULLPTR));
@@ -1529,6 +1530,18 @@ public:
         control_Language->setWhatsThis(QApplication::translate("SoftKeyboard", "56", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         control_Language->setText(QApplication::translate("SoftKeyboard", "EN", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        control_PageDown->setWhatsThis(QApplication::translate("SoftKeyboard", "54", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        control_PageDown->setText(QApplication::translate("SoftKeyboard", "PgDn", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        control_ArrowDown->setWhatsThis(QApplication::translate("SoftKeyboard", "60", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        control_ArrowDown->setText(QApplication::translate("SoftKeyboard", "\342\206\223", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        control_ArrowLeft->setWhatsThis(QApplication::translate("SoftKeyboard", "59", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        control_ArrowLeft->setText(QApplication::translate("SoftKeyboard", "\342\206\220", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         control_LeftAlt->setWhatsThis(QApplication::translate("SoftKeyboard", "57", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
@@ -1538,22 +1551,22 @@ public:
 #endif // QT_NO_WHATSTHIS
         control_Space->setText(QString());
 #ifndef QT_NO_WHATSTHIS
-        control_ArrowLeft->setWhatsThis(QApplication::translate("SoftKeyboard", "59", Q_NULLPTR));
+        symbol_BraceRightBracketRight->setWhatsThis(QApplication::translate("SoftKeyboard", "26", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
-        control_ArrowLeft->setText(QApplication::translate("SoftKeyboard", "\342\206\220", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        control_ArrowDown->setWhatsThis(QApplication::translate("SoftKeyboard", "60", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        control_ArrowDown->setText(QApplication::translate("SoftKeyboard", "\342\206\223", Q_NULLPTR));
+        symbol_BraceRightBracketRight->setText(QApplication::translate("SoftKeyboard", " }\n"
+" ]", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         control_ArrowRight->setWhatsThis(QApplication::translate("SoftKeyboard", "61", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         control_ArrowRight->setText(QApplication::translate("SoftKeyboard", "\342\206\222", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        symbol_BraceRightBracketRight->setWhatsThis(QApplication::translate("SoftKeyboard", "26", Q_NULLPTR));
+        control_Backspace->setWhatsThis(QApplication::translate("SoftKeyboard", "13", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
-        symbol_BraceRightBracketRight->setText(QApplication::translate("SoftKeyboard", " }\n"
-" ]", Q_NULLPTR));
+        control_Backspace->setText(QApplication::translate("SoftKeyboard", "Backspace", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        control_Disable->setWhatsThis(QApplication::translate("SoftKeyboard", "62", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        control_Disable->setText(QApplication::translate("SoftKeyboard", "\342\226\274", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         language_Pinyin->setToolTip(QApplication::translate("SoftKeyboard", "1.\345\217\214\345\207\273\346\216\245\346\224\266\347\273\223\346\236\234\345\271\266\351\200\200\345\207\272\n"
 "2.\345\217\263\345\207\273\347\233\264\346\216\245\351\200\200\345\207\272\351\224\256\347\233\230", Q_NULLPTR));
@@ -1571,7 +1584,8 @@ public:
 #ifndef QT_NO_WHATSTHIS
         control_Enter_num->setWhatsThis(QApplication::translate("SoftKeyboard", "40", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
-        control_Enter_num->setText(QApplication::translate("SoftKeyboard", "Enter", Q_NULLPTR));
+        control_Enter_num->setText(QApplication::translate("SoftKeyboard", "Enter\n"
+"\342\226\274", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         number_D3->setWhatsThis(QApplication::translate("SoftKeyboard", "3", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
@@ -1585,29 +1599,29 @@ public:
 #endif // QT_NO_WHATSTHIS
         number_D7->setText(QApplication::translate("SoftKeyboard", "7", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        number_D8->setWhatsThis(QApplication::translate("SoftKeyboard", "8", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        number_D8->setText(QApplication::translate("SoftKeyboard", " 8", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
         number_D4->setWhatsThis(QApplication::translate("SoftKeyboard", "4", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         number_D4->setText(QApplication::translate("SoftKeyboard", "4", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        number_D5->setWhatsThis(QApplication::translate("SoftKeyboard", "5", Q_NULLPTR));
+        number_D8->setWhatsThis(QApplication::translate("SoftKeyboard", "8", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
-        number_D5->setText(QApplication::translate("SoftKeyboard", "5", Q_NULLPTR));
+        number_D8->setText(QApplication::translate("SoftKeyboard", " 8", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        number_D1->setWhatsThis(QApplication::translate("SoftKeyboard", "1", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        number_D1->setText(QApplication::translate("SoftKeyboard", "1", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         number_D9->setWhatsThis(QApplication::translate("SoftKeyboard", "9", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         number_D9->setText(QApplication::translate("SoftKeyboard", " 9", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
+        number_D5->setWhatsThis(QApplication::translate("SoftKeyboard", "5", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        number_D5->setText(QApplication::translate("SoftKeyboard", "5", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
         number_D0->setWhatsThis(QApplication::translate("SoftKeyboard", "10", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         number_D0->setText(QApplication::translate("SoftKeyboard", "0", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        number_D1->setWhatsThis(QApplication::translate("SoftKeyboard", "1", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        number_D1->setText(QApplication::translate("SoftKeyboard", "1", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         number_D2->setWhatsThis(QApplication::translate("SoftKeyboard", "2", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS

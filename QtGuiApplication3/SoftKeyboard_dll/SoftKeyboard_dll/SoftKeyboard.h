@@ -23,6 +23,7 @@ public:
 
     void registerObject(QObject *obj);
 	void setDialog();
+	QObject *getRegesterObj();
 private:
     enum EKey
     {
@@ -92,6 +93,7 @@ private:
         eKey_Left,
         eKey_Down,
         eKey_Right,
+		eKey_Disable,
     };
 
     enum ELetterStyle
@@ -127,6 +129,7 @@ private:
     void TabFunctionKey();
     void CapsLockFunctionKey();
     void EnterFunctionKey();
+	void DiableFunctionKey();
     void ShiftFunctionKey();
     void CtrlFunctionKey();
     void EN_CHFunctionKey();
@@ -191,6 +194,6 @@ private:
 
 extern "C" Q_DECL_EXPORT void RegisterObject(QObject* obj);
 extern "C" Q_DECL_EXPORT void ShowKeyboard();
-
+extern "C" Q_DECL_EXPORT QObject *GetRegisterObject();
 
 #endif // SOFTKEYBOARD_DLL_H

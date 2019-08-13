@@ -146,6 +146,9 @@ void CVAZApplication::InitKeyboard()
 
 	m_fpShowKeyboard = (fpShowKeyboard)lib.resolve("ShowKeyboard");
 	if (m_fpShowKeyboard == nullptr) {}
+
+	m_GetRegisterObject = (fpGetRegisterObject)lib.resolve("GetRegisterObject");
+	if (m_GetRegisterObject == nullptr) {}
 	//WRITE_ERROR_LOG(_T("resolve 'ShowKeyboard' failed! Reason:") + lib.errorString().toStdWString());
 }
 
@@ -223,102 +226,123 @@ void CVAZApplication::MonitorUserOpr(QObject *obj, QEvent *e)
     } while (0);
 
     //WriteLogSpec(eLogChannelID_UserOpr, eLogLevel_Info, _T("Obj: %s, Text: %s"), 
-    //    VAZConvStrQ2T(obj->objectName()).c_str(), VAZConvStrQ2T(sText).c_str());
+//    VAZConvStrQ2T(obj->objectName()).c_str(), VAZConvStrQ2T(sText).c_str());
 }
 
 void CVAZApplication::NotifyKeyboard(QObject *obj, QEvent *e)
 {
-    if (dynamic_cast<QWidget*>(obj) != Q_NULLPTR
-        && e->type() == QEvent::MouseButtonPress)
-    {
-        QWidget* pWidget = dynamic_cast<QWidget*>(obj);
-        QWidget* pParentWidget = pWidget->parentWidget();
-        if (dynamic_cast<QLineEdit*>(obj) == Q_NULLPTR)
-        {
-            if (pParentWidget == Q_NULLPTR)
-                return;
+	if (dynamic_cast<QWidget*>(obj) != Q_NULLPTR
+		&& e->type() == QEvent::MouseButtonPress)
+	{
+		QWidget* pWidget = dynamic_cast<QWidget*>(obj);
+		QWidget* pParentWidget = pWidget->parentWidget();
+		if (dynamic_cast<QLineEdit*>(obj) == Q_NULLPTR)
+		{
+			if (pParentWidget == Q_NULLPTR)
+				return;
 
-            if (!pParentWidget->inherits("QTextEdit")
-                && !pParentWidget->inherits("QPlainTextEdit"))
-                return;
+			if (!pParentWidget->inherits("QTextEdit")
+				&& !pParentWidget->inherits("QPlainTextEdit"))
+				return;
 
-            if (pParentWidget->inherits("QTextEdit"))
-            {
-                if (dynamic_cast<QTextEdit*>(pParentWidget)->isReadOnly()
-                    || !dynamic_cast<QTextEdit*>(pParentWidget)->isEnabled())
-                    return;
+			if (pParentWidget->inherits("QTextEdit"))
+			{
+				if (dynamic_cast<QTextEdit*>(pParentWidget)->isReadOnly()
+					|| !dynamic_cast<QTextEdit*>(pParentWidget)->isEnabled())
+					return;
 
-            }
-            else
-            {
-                if (dynamic_cast<QPlainTextEdit*>(pParentWidget)->isReadOnly()
-                    || !dynamic_cast<QPlainTextEdit*>(pParentWidget)->isEnabled())
-                    return;
+			}
+			else
+			{
+				if (dynamic_cast<QPlainTextEdit*>(pParentWidget)->isReadOnly()
+					|| !dynamic_cast<QPlainTextEdit*>(pParentWidget)->isEnabled())
+					return;
 
-            }
+			}
 
-            m_fpRegisterObject(pParentWidget);
-        }
-        else
-        {
-            if (dynamic_cast<QLineEdit*>(obj)->isReadOnly()
-                || !dynamic_cast<QLineEdit*>(obj)->isEnabled())
-                return;
-            m_fpRegisterObject(obj);
-        }
+			m_fpRegisterObject(pParentWidget);
+		}
+		else
+		{
+			if (dynamic_cast<QLineEdit*>(obj)->isReadOnly()
+				|| !dynamic_cast<QLineEdit*>(obj)->isEnabled())
+				return;
+			m_fpRegisterObject(obj);
+		}
 
 
-        m_fpShowKeyboard();
-    }
+		m_fpShowKeyboard();
+	}
 }
 
 void CVAZApplication::NotifyStandby(QObject *obj, QEvent *e)
 {
-    if ((e->type() == QEvent::KeyPress
-        || e->type() == QEvent::KeyRelease
-        || e->type() == QEvent::MouseButtonPress
-        || e->type() == QEvent::MouseButtonRelease
-        || e->type() == QEvent::MouseButtonDblClick
-        || e->type() == QEvent::MouseButtonRelease
-        || e->type() == QEvent::MouseMove)
-        && m_MainWin != nullptr)
-    {
-       // m_MainWin->ExitStandby();
-		
-    }
+	if ((e->type() == QEvent::KeyPress
+		|| e->type() == QEvent::KeyRelease
+		|| e->type() == QEvent::MouseButtonPress
+		|| e->type() == QEvent::MouseButtonRelease
+		|| e->type() == QEvent::MouseButtonDblClick
+		|| e->type() == QEvent::MouseButtonRelease
+		|| e->type() == QEvent::MouseMove)
+		&& m_MainWin != nullptr)
+	{
+		// m_MainWin->ExitStandby();
+
+	}
 }
 
 void CVAZApplication::NotifyKeyRequest(QObject *obj, QEvent *e)
 {
-    if (e->type() == QEvent::KeyPress
-        || e->type() == QEvent::KeyRelease)
-    {
-        QKeyEvent *pKeyEvent = (QKeyEvent *)e;
-        if (pKeyEvent->key() == Qt::Key_Escape)
-            return;
+	if (e->type() == QEvent::KeyPress
+		|| e->type() == QEvent::KeyRelease)
+	{
+		QKeyEvent *pKeyEvent = (QKeyEvent *)e;
+		if (pKeyEvent->key() == Qt::Key_Escape)
+			return;
 
-        if (pKeyEvent->key() == Qt::Key_F7
-            || pKeyEvent->key() == Qt::Key_F8)
-        {
-            QString sObjName = obj->objectName();
-            if (sObjName == m_MainWin->objectName() + "Window"
-                || sObjName == "CShutDownDialogWindow")
-            {
-                // qDebug() << "notify1 MainWin:" << m_MainWin << "vs receiver:" << obj << " keyevent->type:" << pKeyEvent->type() << " keyevent->key" << pKeyEvent->key();
-                if (pKeyEvent->type() == QEvent::KeyPress)
-                    emit SignalNotifyKeyPressEvent(unsigned int(pKeyEvent->key()), sObjName);
-            }
-            else
-            {
-            }
-            //qDebug() << "notify2 MainWin:"<<m_MainWin<<"vs receiver:" << obj << " keyevent->type:" << pKeyEvent->type() << " keyevent->key" << pKeyEvent->key();
-            //return true;
-        }
-        else if (pKeyEvent->key() == Qt::Key_F35)
-        {
-            // 关闭软件
-            if (obj->objectName().compare("btnHolidayShutdown") == 0)
-                SlotsQuit(true);
-        }
+		if (pKeyEvent->key() == Qt::Key_F7
+			|| pKeyEvent->key() == Qt::Key_F8)
+		{
+			QString sObjName = obj->objectName();
+			if (sObjName == m_MainWin->objectName() + "Window"
+				|| sObjName == "CShutDownDialogWindow")
+			{
+				// qDebug() << "notify1 MainWin:" << m_MainWin << "vs receiver:" << obj << " keyevent->type:" << pKeyEvent->type() << " keyevent->key" << pKeyEvent->key();
+				if (pKeyEvent->type() == QEvent::KeyPress)
+					emit SignalNotifyKeyPressEvent(unsigned int(pKeyEvent->key()), sObjName);
+			}
+			else
+			{
+			}
+			//qDebug() << "notify2 MainWin:"<<m_MainWin<<"vs receiver:" << obj << " keyevent->type:" << pKeyEvent->type() << " keyevent->key" << pKeyEvent->key();
+			//return true;
+		}
+		else if (pKeyEvent->key() == Qt::Key_F35)
+		{
+			// 关闭软件
+			if (obj->objectName().compare("btnHolidayShutdown") == 0)
+				SlotsQuit(true);
+		}
+		else
+		{
+			if (e->type() == QEvent::KeyRelease)
+			{
+				// 关闭软件
+				qDebug() << "name is " << obj->objectName();
+				QKeyEvent *keyEvent = dynamic_cast<QKeyEvent *>(e);
+				//qDebug() << "key id is " << keyEvent->key();
+				//qDebug() << "father name is " << obj->parent();
+				if (obj->objectName().compare("SoftKeyboard") == 0)
+				{
+					QObject *ib = m_GetRegisterObject();
+					qDebug() << "regetsiterrobject is " << ib->objectName();
+					Qt::KeyboardModifiers Modifier = Qt::NoModifier;
+					int involvedKeys = 1;
+					QKeyEvent keyEvent(QEvent::KeyPress, keyEvent->key(), Modifier, keyEvent->text(), false, involvedKeys);
+					QApplication::sendEvent(ib, &keyEvent);
+				}
+			}
+
+		}
     }
 }

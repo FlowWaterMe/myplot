@@ -222,7 +222,7 @@ void CSoftKeyboard::FunctionKeyDealWith(EKey eKey)
     case eKey_Left: Key_Left_FunctionKey();break;
     case eKey_Down: Key_Down_FunctionKey();break;
 	case eKey_Right:Key_Right_FunctionKey(); break;
-
+	case eKey_Disable:DiableFunctionKey(); break;
     default: break;
     }
 }
@@ -276,7 +276,11 @@ void CSoftKeyboard::EnterFunctionKey()
         WidgetValueInserted("\r\n");
     }
 }
-
+void CSoftKeyboard::DiableFunctionKey()
+{
+	m_CallObj = Q_NULLPTR;
+	close();
+}
 void CSoftKeyboard::ShiftFunctionKey()
 {
     m_bShift = !m_bShift;
@@ -713,3 +717,12 @@ void ShowKeyboard()
 }
 
 
+QObject *GetRegisterObject()
+{
+	return CSoftKeyboard::GetInstance().getRegesterObj();
+}
+
+QObject *CSoftKeyboard::getRegesterObj()
+{
+	return m_CallObj;
+}
