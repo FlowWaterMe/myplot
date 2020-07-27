@@ -121,6 +121,60 @@
     <ClCompile Include="Highlighter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BoxItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCombox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyComboMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\BaseItem.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\BasePlate.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\DiscDefine.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\HexagonItem.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\ItemManager.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\ReactionPlate.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\ReagentPlate.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\RectangleItem.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\RingItem.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\RoundItem.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\SamplePlate.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\SquareItem.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\TextItem.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\TrapezoidItem.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\Plate\TriangleItem.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QtGuiApplication3.h">
@@ -161,11 +215,50 @@
     <ClInclude Include="GlobalDllheader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GlobalDefine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="APPFun.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CbxDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Plate\BaseItem.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Plate\BasePlate.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Plate\DiscDefine.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Plate\HexagonItem.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Plate\ItemManager.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Plate\RectangleItem.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Plate\RingItem.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Plate\RoundItem.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Plate\SquareItem.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Plate\TextItem.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Plate\TrapezoidItem.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\Plate\TriangleItem.h">
+      <Filter>control</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -198,5 +291,29 @@
     <QtMoc Include="Highlighter.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="BoxItem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MyCombox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MyComboMgr.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="control\Plate\ReactionPlate.h">
+      <Filter>control</Filter>
+    </QtMoc>
+    <QtMoc Include="control\Plate\ReagentPlate.h">
+      <Filter>control</Filter>
+    </QtMoc>
+    <QtMoc Include="control\Plate\SamplePlate.h">
+      <Filter>control</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Common\Common.vcxproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QtGuiApplication3.rc" />
   </ItemGroup>
 </Project>

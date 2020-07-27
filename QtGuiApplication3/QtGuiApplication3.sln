@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtGuiApplication3", "QtGuiApplication3\QtGuiApplication3.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
 EndProject
@@ -14,6 +14,14 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OSAdapter", "OSAdapter\OSAdapter.vcxproj", "{DEBF1B6A-8B6B-4FDF-A66C-FD35739A5EBF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoftKeyboard_dll", "SoftKeyboard_dll\SoftKeyboard_dll\SoftKeyboard_dll.vcxproj", "{01BA90EF-29B2-36FD-820F-83877F46F351}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcxproj", "{0E57DE80-7F06-4877-A7D1-9B3F5261A006}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Configer", "Configer\Configer.vcxproj", "{77A7ED2F-EE18-4BDE-B6F4-6EBAA9671A58}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Logger", "Logger\Logger.vcxproj", "{E279F508-18EA-4D87-B083-5CBB9C02AE08}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppPublic", "AppPublic\AppPublic.vcxproj", "{26064FE3-F5B0-4177-B9A4-C78F20101211}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +53,22 @@ Global
 		{01BA90EF-29B2-36FD-820F-83877F46F351}.Debug|x86.Build.0 = Debug|Win32
 		{01BA90EF-29B2-36FD-820F-83877F46F351}.Release|x86.ActiveCfg = Release|Win32
 		{01BA90EF-29B2-36FD-820F-83877F46F351}.Release|x86.Build.0 = Release|Win32
+		{0E57DE80-7F06-4877-A7D1-9B3F5261A006}.Debug|x86.ActiveCfg = Debug|Win32
+		{0E57DE80-7F06-4877-A7D1-9B3F5261A006}.Debug|x86.Build.0 = Debug|Win32
+		{0E57DE80-7F06-4877-A7D1-9B3F5261A006}.Release|x86.ActiveCfg = Release|Win32
+		{0E57DE80-7F06-4877-A7D1-9B3F5261A006}.Release|x86.Build.0 = Release|Win32
+		{77A7ED2F-EE18-4BDE-B6F4-6EBAA9671A58}.Debug|x86.ActiveCfg = Debug|Win32
+		{77A7ED2F-EE18-4BDE-B6F4-6EBAA9671A58}.Debug|x86.Build.0 = Debug|Win32
+		{77A7ED2F-EE18-4BDE-B6F4-6EBAA9671A58}.Release|x86.ActiveCfg = Release|Win32
+		{77A7ED2F-EE18-4BDE-B6F4-6EBAA9671A58}.Release|x86.Build.0 = Release|Win32
+		{E279F508-18EA-4D87-B083-5CBB9C02AE08}.Debug|x86.ActiveCfg = Debug|Win32
+		{E279F508-18EA-4D87-B083-5CBB9C02AE08}.Debug|x86.Build.0 = Debug|Win32
+		{E279F508-18EA-4D87-B083-5CBB9C02AE08}.Release|x86.ActiveCfg = Release|Win32
+		{E279F508-18EA-4D87-B083-5CBB9C02AE08}.Release|x86.Build.0 = Release|Win32
+		{26064FE3-F5B0-4177-B9A4-C78F20101211}.Debug|x86.ActiveCfg = Debug|Win32
+		{26064FE3-F5B0-4177-B9A4-C78F20101211}.Debug|x86.Build.0 = Debug|Win32
+		{26064FE3-F5B0-4177-B9A4-C78F20101211}.Release|x86.ActiveCfg = Release|Win32
+		{26064FE3-F5B0-4177-B9A4-C78F20101211}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

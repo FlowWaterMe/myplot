@@ -1,4 +1,8 @@
 <RCC>
     <qresource prefix="/QtGuiApplication3"/>
-    <qresource prefix="/新前缀"/>
+    <qresource prefix="/新前缀">
+        <file>Resources/image/add.png</file>
+        <file>Resources/image/delete.png</file>
+        <file>Resources/image/drop.png</file>
+    </qresource>
 </RCC>

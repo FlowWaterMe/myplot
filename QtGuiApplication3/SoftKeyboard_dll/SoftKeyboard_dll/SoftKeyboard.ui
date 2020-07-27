@@ -6,13 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>825</width>
-    <height>385</height>
+    <width>742</width>
+    <height>335</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>800</width>
+    <width>700</width>
     <height>280</height>
    </size>
   </property>
@@ -58,38 +58,41 @@ QDialog
    <bool>false</bool>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
+   <property name="topMargin">
+    <number>40</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>2</number>
+   </property>
+   <item row="1" column="0">
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="acceptDrops">
       <bool>false</bool>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="page">
       <layout class="QGridLayout" name="gridLayout_2">
        <property name="leftMargin">
-        <number>9</number>
+        <number>0</number>
        </property>
        <property name="topMargin">
-        <number>20</number>
+        <number>0</number>
        </property>
        <property name="rightMargin">
-        <number>9</number>
+        <number>0</number>
        </property>
        <property name="bottomMargin">
-        <number>20</number>
+        <number>0</number>
        </property>
-       <property name="spacing">
-        <number>6</number>
-       </property>
-       <item row="0" column="0" colspan="9">
+       <item row="0" column="0">
         <layout class="QGridLayout" name="keyboardPanel">
          <property name="topMargin">
           <number>0</number>
          </property>
          <property name="spacing">
-          <number>2</number>
+          <number>4</number>
          </property>
          <item row="1" column="38" colspan="2">
           <widget class="QPushButton" name="symbol_BarBackslash">
@@ -145,7 +148,7 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>75</width>
+             <width>70</width>
              <height>32</height>
             </size>
            </property>
@@ -229,8 +232,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -249,7 +258,8 @@ QDialog
             <string>24</string>
            </property>
            <property name="text">
-            <string>p</string>
+            <string>P
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -266,8 +276,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -286,7 +302,8 @@ QDialog
             <string>31</string>
            </property>
            <property name="text">
-            <string>d</string>
+            <string>D
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -303,8 +320,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -323,7 +346,8 @@ QDialog
             <string>30</string>
            </property>
            <property name="text">
-            <string>s</string>
+            <string>S
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -340,8 +364,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -360,7 +390,8 @@ QDialog
             <string>29</string>
            </property>
            <property name="text">
-            <string>a</string>
+            <string>A
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -377,8 +408,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -397,7 +434,8 @@ QDialog
             <string>32</string>
            </property>
            <property name="text">
-            <string>f</string>
+            <string>F
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -414,8 +452,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -434,7 +478,8 @@ QDialog
             <string>35</string>
            </property>
            <property name="text">
-            <string>j</string>
+            <string>J
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -451,8 +496,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -471,7 +522,8 @@ QDialog
             <string>33</string>
            </property>
            <property name="text">
-            <string>g</string>
+            <string>G
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -488,8 +540,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -508,7 +566,8 @@ QDialog
             <string>34</string>
            </property>
            <property name="text">
-            <string>h</string>
+            <string>H
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1137,8 +1196,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1157,7 +1222,8 @@ QDialog
             <string>15</string>
            </property>
            <property name="text">
-            <string>q</string>
+            <string>Q
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1174,8 +1240,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1194,7 +1266,8 @@ QDialog
             <string>16</string>
            </property>
            <property name="text">
-            <string>w</string>
+            <string>W
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1211,8 +1284,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1231,7 +1310,8 @@ QDialog
             <string>17</string>
            </property>
            <property name="text">
-            <string>e</string>
+            <string>E
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1248,8 +1328,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1268,7 +1354,8 @@ QDialog
             <string>18</string>
            </property>
            <property name="text">
-            <string>r</string>
+            <string>R
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1285,8 +1372,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1305,7 +1398,8 @@ QDialog
             <string>21</string>
            </property>
            <property name="text">
-            <string>u</string>
+            <string>U
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1322,8 +1416,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1342,7 +1442,8 @@ QDialog
             <string>19</string>
            </property>
            <property name="text">
-            <string>t</string>
+            <string>T
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1359,8 +1460,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1379,7 +1486,8 @@ QDialog
             <string>20</string>
            </property>
            <property name="text">
-            <string>y</string>
+            <string>Y
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1396,8 +1504,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1416,7 +1530,8 @@ QDialog
             <string>22</string>
            </property>
            <property name="text">
-            <string>i</string>
+            <string>I
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1433,8 +1548,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1453,7 +1574,8 @@ QDialog
             <string>23</string>
            </property>
            <property name="text">
-            <string>o</string>
+            <string>O
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1558,8 +1680,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1578,7 +1706,8 @@ QDialog
             <string>37</string>
            </property>
            <property name="text">
-            <string>l</string>
+            <string>L
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1595,8 +1724,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1615,7 +1750,8 @@ QDialog
             <string>36</string>
            </property>
            <property name="text">
-            <string>k</string>
+            <string>K
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1672,8 +1808,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1692,7 +1834,8 @@ QDialog
             <string>42</string>
            </property>
            <property name="text">
-            <string>z</string>
+            <string>Z
+</string>
            </property>
            <property name="checkable">
             <bool>false</bool>
@@ -1749,8 +1892,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1769,7 +1918,8 @@ QDialog
             <string>43</string>
            </property>
            <property name="text">
-            <string>x</string>
+            <string>X
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1786,8 +1936,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1806,7 +1962,8 @@ QDialog
             <string>44</string>
            </property>
            <property name="text">
-            <string>c</string>
+            <string>C
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1823,8 +1980,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1843,7 +2006,8 @@ QDialog
             <string>45</string>
            </property>
            <property name="text">
-            <string>v</string>
+            <string>V
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1860,8 +2024,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1880,7 +2050,8 @@ QDialog
             <string>46</string>
            </property>
            <property name="text">
-            <string>b</string>
+            <string>B
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1897,8 +2068,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1917,7 +2094,8 @@ QDialog
             <string>47</string>
            </property>
            <property name="text">
-            <string>n</string>
+            <string>N
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -1978,8 +2156,14 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>36</width>
+             <width>40</width>
              <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1998,7 +2182,8 @@ QDialog
             <string>48</string>
            </property>
            <property name="text">
-            <string>m</string>
+            <string>M
+</string>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -2563,7 +2748,7 @@ QDialog
            </property>
            <property name="minimumSize">
             <size>
-             <width>75</width>
+             <width>36</width>
              <height>32</height>
             </size>
            </property>
@@ -2582,6 +2767,9 @@ QDialog
            <property name="whatsThis">
             <string>62</string>
            </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
            <property name="text">
             <string>▼</string>
            </property>
@@ -2592,886 +2780,752 @@ QDialog
          </item>
         </layout>
        </item>
-       <item row="1" column="0" colspan="9">
-        <widget class="QLabel" name="language_Pinyin">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>2000</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>微软雅黑</family>
-           <pointsize>12</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>1.双击接收结果并退出
-2.右击直接退出键盘</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="language_CH1">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>微软雅黑</family>
-           <pointsize>12</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QLabel" name="language_CH2">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>微软雅黑</family>
-           <pointsize>12</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QLabel" name="language_CH3">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>微软雅黑</family>
-           <pointsize>12</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="3">
-        <widget class="QLabel" name="language_CH4">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>微软雅黑</family>
-           <pointsize>12</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="4">
-        <widget class="QLabel" name="language_CH5">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>微软雅黑</family>
-           <pointsize>12</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="5">
-        <widget class="QLabel" name="language_CH6">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>微软雅黑</family>
-           <pointsize>12</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="6">
-        <widget class="QLabel" name="language_CH7">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>微软雅黑</family>
-           <pointsize>12</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="7">
-        <widget class="QLabel" name="language_CH8">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>微软雅黑</family>
-           <pointsize>12</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="8">
-        <widget class="QLabel" name="language_CH9">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>24</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>微软雅黑</family>
-           <pointsize>12</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="page_num">
       <layout class="QGridLayout" name="gridLayout_3">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
        <property name="topMargin">
-        <number>20</number>
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
        </property>
        <property name="bottomMargin">
-        <number>20</number>
+        <number>0</number>
        </property>
        <item row="0" column="0">
-        <layout class="QGridLayout" name="keyboardPanel_number">
-         <property name="spacing">
-          <number>2</number>
+        <widget class="QPushButton" name="number_D1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
          </property>
-         <item row="5" column="3" rowspan="2">
-          <widget class="QPushButton" name="control_Enter_num">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>微软雅黑</family>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="whatsThis">
-            <string>40</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton
+         <property name="minimumSize">
+          <size>
+           <width>36</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>1</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
 {
 	text-align: center;
 	font:20px
 }</string>
-           </property>
-           <property name="text">
-            <string>Enter
-▼</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="3">
-          <widget class="QPushButton" name="number_D3">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>微软雅黑</family>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="whatsThis">
-            <string>3</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton
+         </property>
+         <property name="text">
+          <string>1</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="number_D2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>36</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>2</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
 {
 	text-align: center;
 	font:20px
 }</string>
-           </property>
-           <property name="text">
-            <string>3</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="3">
-          <widget class="QPushButton" name="number_D6">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>微软雅黑</family>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="whatsThis">
-            <string>6</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton
+         </property>
+         <property name="text">
+          <string>2</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="number_D4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>36</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>4</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
 {
 	text-align: center;
 	font:20px
 }</string>
-           </property>
-           <property name="text">
-            <string>6</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QPushButton" name="number_D7">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>微软雅黑</family>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="whatsThis">
-            <string>7</string>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton
+         </property>
+         <property name="text">
+          <string>4</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="number_D5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>36</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>5</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
 {
 	text-align: center;
 	font:20px
 }</string>
-           </property>
-           <property name="text">
-            <string>7</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QPushButton" name="number_D4">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>微软雅黑</family>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="whatsThis">
-            <string>4</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton
+         </property>
+         <property name="text">
+          <string>5</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="number_D7">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>36</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>7</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
 {
 	text-align: center;
 	font:20px
 }</string>
-           </property>
-           <property name="text">
-            <string>4</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <widget class="QPushButton" name="number_D8">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>微软雅黑</family>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="whatsThis">
-            <string>8</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton
+         </property>
+         <property name="text">
+          <string>7</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="number_D8">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>36</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>8</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
 {
 	text-align: center;
 	font:20px
 }</string>
-           </property>
-           <property name="text">
-            <string> 8</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QPushButton" name="number_D1">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>微软雅黑</family>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="whatsThis">
-            <string>1</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton
+         </property>
+         <property name="text">
+          <string> 8</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="number_D6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>36</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>6</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
 {
 	text-align: center;
 	font:20px
 }</string>
-           </property>
-           <property name="text">
-            <string>1</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="3">
-          <widget class="QPushButton" name="number_D9">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>微软雅黑</family>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="whatsThis">
-            <string>9</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton
+         </property>
+         <property name="text">
+          <string>6</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="number_D3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>36</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>3</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
 {
 	text-align: center;
 	font:20px
 }</string>
-           </property>
-           <property name="text">
-            <string> 9</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="2">
-          <widget class="QPushButton" name="number_D5">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>微软雅黑</family>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="whatsThis">
-            <string>5</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton
+         </property>
+         <property name="text">
+          <string>3</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="number_D9">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>36</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>9</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
 {
 	text-align: center;
 	font:20px
 }</string>
-           </property>
-           <property name="text">
-            <string>5</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="0">
-          <widget class="QPushButton" name="number_D0">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>微软雅黑</family>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="whatsThis">
-            <string>10</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton
+         </property>
+         <property name="text">
+          <string> 9</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="control_Add">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>63</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
 {
 	text-align: center;
 	font:20px
 }</string>
-           </property>
-           <property name="text">
-            <string>0</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="2">
-          <widget class="QPushButton" name="number_D2">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>微软雅黑</family>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="whatsThis">
-            <string>2</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton
+         </property>
+         <property name="text">
+          <string>+</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPushButton" name="control_Mutip">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>65</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
 {
 	text-align: center;
 	font:20px
 }</string>
-           </property>
-           <property name="text">
-            <string>2</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="0">
-          <widget class="QPushButton" name="symbol_GreaterPeriod_num">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>微软雅黑</family>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="whatsThis">
-            <string>50</string>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton
+         </property>
+         <property name="text">
+          <string>*</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="control_Decrease">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>64</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
 {
 	text-align: center;
 	font:20px
 }</string>
-           </property>
-           <property name="text">
-            <string>.</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="2" rowspan="2">
-          <widget class="QPushButton" name="control_Backspace_num">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>75</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>微软雅黑</family>
-             <pointsize>-1</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="whatsThis">
-            <string>13</string>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton
+         </property>
+         <property name="text">
+          <string>-</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="symbol_GreaterPeriod_num">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>36</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>50</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
 {
 	text-align: center;
 	font:20px
 }</string>
-           </property>
-           <property name="text">
-            <string>Backspace</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-        </layout>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QPushButton" name="number_D0">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>36</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>10</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	text-align: center;
+	font:20px
+}</string>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="control_Backspace_num">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>13</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	text-align: center;
+	font:20px
+}</string>
+         </property>
+         <property name="text">
+          <string>Backspace</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3" colspan="2">
+        <widget class="QPushButton" name="control_Enter_num">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>40</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	text-align: center;
+	font:20px
+}</string>
+         </property>
+         <property name="text">
+          <string>Enter</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4" rowspan="2">
+        <widget class="QPushButton" name="control_Disabled">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="whatsThis">
+          <string>66</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	text-align: center;
+	font:20px
+}</string>
+         </property>
+         <property name="text">
+          <string>▼</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
     </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLineEdit" name="edtContent"/>
    </item>
   </layout>
  </widget>

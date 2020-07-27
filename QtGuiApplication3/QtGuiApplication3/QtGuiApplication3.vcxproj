@@ -19,6 +19,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -46,9 +47,11 @@
   <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -66,7 +69,7 @@
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(QTDIR)\lib;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;SelfCheck.lib;SerialDevice.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;SelfCheck.lib;SerialDevice.lib;AppPublic.lib;Configer.lib;Common.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <QtMoc>
       <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
@@ -115,7 +118,23 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BoxItem.cpp" />
     <ClCompile Include="control\MySlideSwitch.cpp" />
+    <ClCompile Include="control\Plate\BaseItem.cpp" />
+    <ClCompile Include="control\Plate\BasePlate.cpp" />
+    <ClCompile Include="control\Plate\DiscDefine.cpp" />
+    <ClCompile Include="control\Plate\HexagonItem.cpp" />
+    <ClCompile Include="control\Plate\ItemManager.cpp" />
+    <ClCompile Include="control\Plate\ReactionPlate.cpp" />
+    <ClCompile Include="control\Plate\ReagentPlate.cpp" />
+    <ClCompile Include="control\Plate\RectangleItem.cpp" />
+    <ClCompile Include="control\Plate\RingItem.cpp" />
+    <ClCompile Include="control\Plate\RoundItem.cpp" />
+    <ClCompile Include="control\Plate\SamplePlate.cpp" />
+    <ClCompile Include="control\Plate\SquareItem.cpp" />
+    <ClCompile Include="control\Plate\TextItem.cpp" />
+    <ClCompile Include="control\Plate\TrapezoidItem.cpp" />
+    <ClCompile Include="control\Plate\TriangleItem.cpp" />
     <ClCompile Include="CurvePlot.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_CurvePlot.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
@@ -167,6 +186,8 @@
     </ClCompile>
     <ClCompile Include="Highlighter.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyComboMgr.cpp" />
+    <ClCompile Include="MyCombox.cpp" />
     <ClCompile Include="MyKeyBoardButton.cpp" />
     <ClCompile Include="MyLineEdit.cpp" />
     <ClCompile Include="myqwizard.cpp" />
@@ -201,7 +222,26 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="APPFun.h" />
-    <ClInclude Include="GlobalDefine.h" />
+    <ClInclude Include="CbxDefine.h" />
+    <QtMoc Include="MyComboMgr.h" />
+    <ClInclude Include="control\Plate\BaseItem.h" />
+    <ClInclude Include="control\Plate\BasePlate.h" />
+    <ClInclude Include="control\Plate\DiscDefine.h" />
+    <ClInclude Include="control\Plate\HexagonItem.h" />
+    <ClInclude Include="control\Plate\ItemManager.h" />
+    <QtMoc Include="control\Plate\ReactionPlate.h" />
+    <QtMoc Include="control\Plate\ReagentPlate.h" />
+    <ClInclude Include="control\Plate\RectangleItem.h" />
+    <ClInclude Include="control\Plate\RingItem.h" />
+    <ClInclude Include="control\Plate\RoundItem.h" />
+    <QtMoc Include="control\Plate\SamplePlate.h" />
+    <ClInclude Include="control\Plate\SquareItem.h" />
+    <ClInclude Include="control\Plate\TextItem.h" />
+    <ClInclude Include="control\Plate\TrapezoidItem.h" />
+    <ClInclude Include="control\Plate\TriangleItem.h" />
+    <ClInclude Include="resource.h" />
+    <QtMoc Include="MyCombox.h" />
+    <QtMoc Include="BoxItem.h" />
     <ClInclude Include="GlobalDllheader.h" />
     <QtMoc Include="Highlighter.h" />
     <QtMoc Include="MyLineEdit.h" />
@@ -288,6 +328,12 @@
     <Image Include="Resources\image\sort_up.png" />
     <Image Include="Resources\image\switch_off.png" />
     <Image Include="Resources\image\switch_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Common\Common.vcxproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QtGuiApplication3.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

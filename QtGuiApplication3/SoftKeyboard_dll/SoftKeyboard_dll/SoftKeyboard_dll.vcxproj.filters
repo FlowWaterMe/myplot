@@ -50,6 +50,9 @@
     <ClInclude Include="softkeyboard_dll_global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="KeyboardDefine.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="debug\moc_predefs.h.cbt">
@@ -71,10 +74,16 @@
     <QtMoc Include="SoftKeyboard.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="PYWidget.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SoftKeyboard.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PYWidget.cpp">
+      <Filter>Generated Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
